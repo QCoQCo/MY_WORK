@@ -6,5 +6,6 @@ import SectionTitle from './SectionTitle';
 import ProjectCard from './ProjectCard';
 import FadeInSection from './FadeInSection';
 import AnimatedBackground from './AnimatedBackground';
+import ScrollToTop from './ScrollToTop';
 
-export { Header, Footer, LocalNav, TopBtn, SectionTitle, ProjectCard, FadeInSection, AnimatedBackground };
+export { Header, Footer, LocalNav, TopBtn, SectionTitle, ProjectCard, FadeInSection, AnimatedBackground, ScrollToTop };

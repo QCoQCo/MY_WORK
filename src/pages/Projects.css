@@ -25,3 +25,13 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .page-projects {
+    padding: 2rem 0.75rem 3rem;
+  }
+
+  .project-cards--full {
+    gap: 1.25rem;
+  }
+}

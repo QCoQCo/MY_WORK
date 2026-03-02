@@ -1,5 +1,5 @@
 import './App.css';
-import { Header, Footer, LocalNav, TopBtn, AnimatedBackground } from './components';
+import { Header, Footer, LocalNav, TopBtn, AnimatedBackground, ScrollToTop } from './components';
 import { Home, About, Projects, Skills, Contact } from './pages';
 import { LanguageProvider } from './context';
 import { BrowserRouter, Outlet, Route, Routes, useLocation } from 'react-router-dom';
@@ -27,6 +27,7 @@ function App() {
         <div id='app'>
             <LanguageProvider>
                 <BrowserRouter>
+                    <ScrollToTop />
                     <Routes>
                         <Route path='/' element={<Layout />}>
                             <Route index element={<Home />} />

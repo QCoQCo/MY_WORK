@@ -72,6 +72,7 @@
   }
 }
 
+/* --bp-mobile: 480px */
 @media (max-width: 480px) {
   .animated-bg__stars {
     animation-duration: 300s;

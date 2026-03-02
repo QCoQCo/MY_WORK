@@ -69,11 +69,18 @@ button:focus-visible {
 @charset "utf-8";
 
 /* Phase G.2: 레퍼런스 기반 스타일 변수 */
+/* Phase R.1: 반응형 브레이크포인트 */
 :root {
   --page-max-width: 1000px;
   --page-narrow: 700px;
   --transition-fast: 0.2s ease;
   --transition-normal: 0.25s ease;
+
+  /* 반응형 브레이크포인트 (미디어쿼리에는 직접 값 사용) */
+  --bp-mobile: 480px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+  --bp-wide: 1280px;
 }
 
 * {
