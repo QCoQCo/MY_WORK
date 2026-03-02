@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,54 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+#wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+#main-content {
+    padding-top: 60px; /* header 높이 */
+    min-height: calc(100vh - 60px);
+}
+
+.page {
+    padding: 2rem;
+    min-height: 60vh;
 }

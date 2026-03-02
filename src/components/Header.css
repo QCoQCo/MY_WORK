@@ -1,0 +1,65 @@
+/* Phase 2.1: Fixed Header with scroll background */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+#header .hd_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+#header .logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .gnb ul {
+  display: flex;
+  gap: 2rem;
+}
+
+#header .gnb a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+#header .gnb a:hover {
+  color: #fff;
+}
+
+#header .lang {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#header .lang button {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s;
+}
+
+#header .lang button:hover,
+#header .lang button.on {
+  color: #fff;
+}
+
+/* 스크롤 시 배경 추가 */
+#header.on {
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+}

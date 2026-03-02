@@ -1,0 +1,38 @@
+/* Phase 2.2: 좌측 로컬 네비 (lordin loc_list 패턴) */
+.loc_list {
+  position: fixed;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+}
+
+.loc_list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.loc_list li a {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.loc_list li:hover a,
+.loc_list li.on a {
+  color: #fff;
+}
+
+.loc_list li.on a {
+  font-weight: 500;
+}
+
+/* 모바일에서 숨김 */
+@media (max-width: 768px) {
+  .loc_list {
+    display: none;
+  }
+}

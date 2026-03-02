@@ -1,0 +1,49 @@
+/* Phase 2.4: Footer */
+#footer {
+  padding: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#footer .ft_inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+#footer .ft_contact ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#footer .ft_contact li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#footer .ft_contact .label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  min-width: 1.2rem;
+}
+
+#footer .ft_contact a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+#footer .ft_contact a:hover {
+  color: #fff;
+}
+
+#footer .copyright {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}

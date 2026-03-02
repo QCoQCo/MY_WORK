@@ -1,0 +1,11 @@
+export { profile } from './profile';
+export { education } from './education';
+export { experience } from './experience';
+export { certifications } from './certifications';
+export { projects } from './projects';
+export type { Project } from './projects';
+export { skills } from './skills';
+export type { SkillCategory, SkillItem } from './skills';
+export { jobSummary, introSummary, introStrength, strengths, selfPr } from './intro';
+export { selfIntroSections } from './selfIntro';
+export type { SelfIntroSection } from './selfIntro';

@@ -1,0 +1,178 @@
+/* About 페이지 */
+.page-about {
+  padding: 3rem 2rem 5rem;
+}
+
+.page-about__inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile-card {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+.profile-dl {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.profile-dl__row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.profile-dl__row dt {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.profile-dl__row dd {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.profile-links a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.profile-links a:hover {
+  color: #fff;
+}
+
+/* 자기소개 및 지원동기 */
+.page-about__inner .section-title {
+  margin-top: 3.5rem;
+}
+
+.self-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.self-intro__card {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+.self-intro__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0.75rem;
+}
+
+.self-intro__icon {
+  font-size: 1.1em;
+}
+
+.self-intro__body {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.8);
+  white-space: pre-line;
+}
+
+/* 학력·과정 이력 */
+.about-timeline {
+  margin-top: 2rem;
+}
+
+.about-timeline__item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.about-timeline__item:last-child {
+  border-bottom: none;
+}
+
+.about-timeline__year {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.about-timeline__text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* 자격·면허 */
+.about-certs {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.about-certs__item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.about-certs__year {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.about-certs__text {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 767px) {
+  .page-about {
+    padding: 2rem 1rem 4rem;
+  }
+
+  .profile-card {
+    padding: 1.5rem;
+  }
+
+  .profile-dl__row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .self-intro__card {
+    padding: 1.25rem;
+  }
+
+  .about-timeline__item,
+  .about-certs__item {
+    grid-template-columns: 65px 1fr;
+    gap: 1rem;
+  }
+}

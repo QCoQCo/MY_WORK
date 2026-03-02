@@ -1,0 +1,146 @@
+/* ProjectCard - Home·Projects 공통 */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.project-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.project-card__thumb {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.project-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card__swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.project-card__swiper .swiper-slide {
+  height: 100%;
+}
+
+.project-card__swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card__body {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-card__name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.project-card__period {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+}
+
+.project-card__overview {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+}
+
+.project-card__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-card .tech-tag {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.project-card__achievements {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.project-card__achievements li {
+  list-style: disc;
+  margin-bottom: 0.25rem;
+}
+
+.project-card__achievements li:last-child {
+  margin-bottom: 0;
+}
+
+.project-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.project-card__links .btn-github,
+.project-card__links .btn-deploy {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: opacity 0.2s, background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.project-card__links .btn-github {
+  background: #fff;
+  color: #111;
+}
+
+.project-card__links .btn-github:hover {
+  opacity: 0.9;
+}
+
+.project-card__links .btn-deploy {
+  background: #0f8;
+  color: #000;
+}
+
+.project-card__links .btn-deploy:hover {
+  background: #0da;
+}

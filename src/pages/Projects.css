@@ -1,0 +1,27 @@
+/* Projects 페이지 */
+.page-projects {
+  padding: 3rem 2rem 5rem;
+}
+
+.page-projects__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 전체 페이지용 그리드 */
+.project-cards--full {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .page-projects {
+    padding: 2rem 1rem 4rem;
+  }
+
+  .project-cards--full {
+    grid-template-columns: 1fr;
+  }
+}
