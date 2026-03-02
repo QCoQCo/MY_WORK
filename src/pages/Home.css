@@ -1,6 +1,30 @@
 /* Phase 3: 메인 페이지 섹션 스타일 */
 
-/* 공통: 섹션 타이틀 패턴 */
+/* G.3.3 섹션 페이드 인 */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in-section--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .fade-in-section--visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 공통: 섹션 타이틀 패턴 (lordin) */
 .section-title {
   margin-bottom: 2rem;
 }
@@ -8,9 +32,10 @@
 .section-title__en {
   display: block;
   font-size: 0.8rem;
-  letter-spacing: 0.2em;
-  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.25em;
+  color: rgba(255, 255, 255, 0.55);
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
 .section-title__localized {
@@ -18,6 +43,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.4;
+  letter-spacing: -0.02em;
 }
 
 /* VIEW MORE 버튼 */
@@ -34,7 +60,7 @@
 
 .vm:hover {
   color: #fff;
-  border-bottom-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.6);
 }
 
 /* 3.1 히어로 섹션 */
@@ -60,9 +86,38 @@
   z-index: 0;
 }
 
+.hero__video-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.hero__video--active {
+  opacity: 0.5;
+}
+
+.hero__video-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.7) 0%, rgba(26, 26, 46, 0.6) 50%, rgba(15, 15, 35, 0.7) 100%);
+  z-index: 1;
+}
+
 .hero__content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
   max-width: 720px;
 }
@@ -107,9 +162,17 @@
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero__scroll:hover {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* 3.2 소개 요약 섹션 */
@@ -125,6 +188,7 @@
 
 .intro__text p {
   line-height: 1.8;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.85);
   margin-bottom: 1rem;
 }
@@ -241,6 +305,8 @@
 
 .contact-section__links a:hover {
   color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* 반응형 */

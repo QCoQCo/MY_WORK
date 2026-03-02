@@ -81,6 +81,17 @@ button {
     background-color: #000;
 }
 
+/* HeroSection 제외 페이지: 별/구름 배경 + 그라데이션 */
+#wrapper.wrapper--with-animated-bg {
+    background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(12, 12, 12, 0.633) 20%,
+        rgba(26, 26, 46, 0.719) 50%,
+        rgba(22, 33, 62, 0.824) 100%
+    );
+}
+
 #main-content {
     padding-top: 60px; /* header 높이 */
     min-height: calc(100vh - 60px);

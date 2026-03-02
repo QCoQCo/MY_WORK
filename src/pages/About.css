@@ -4,7 +4,7 @@
 }
 
 .page-about__inner {
-  max-width: 700px;
+  max-width: var(--page-narrow, 700px);
   margin: 0 auto;
 }
 
@@ -14,6 +14,11 @@
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.profile-card:hover {
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .profile-dl {
@@ -52,10 +57,13 @@
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.95rem;
   transition: color 0.2s;
+  display: inline-block;
 }
 
 .profile-links a:hover {
   color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* 자기소개 및 지원동기 */
@@ -75,6 +83,11 @@
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.self-intro__card:hover {
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .self-intro__title {

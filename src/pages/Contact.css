@@ -40,6 +40,8 @@
 
 .page-contact__links a:hover {
   color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 @media (max-width: 767px) {

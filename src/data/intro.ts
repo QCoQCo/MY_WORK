@@ -2,8 +2,8 @@
  * 직무 요약 - 히어로 등 간단 소개용 (my_work.md 직무요약)
  */
 export const jobSummary = {
-    ko: 'React, Rust, Spring Boot, AWS, MySQL 등 풀스택 개발이 가능합니다. 11개 이상의 프로젝트 경험을 보유하며, TOEIC 880점, JLPT N2를 취득했습니다.',
-    ja: 'React、Rust、Spring Boot、AWS、MySQLなどのフルスタック開発が可能です。11以上のプロジェクト経験を有し、TOEIC 880点、JLPT N2を取得しました。',
+    ko: '풀스텍 개발자를 꿈꾸고 있습니다.',
+    ja: 'フルスタック開発者を目指しています。',
 } as const;
 
 /**
