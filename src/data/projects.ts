@@ -148,8 +148,8 @@ export const projects: Project[] = [
         github: 'https://github.com/QCoQCo/Rust-Tauri-Todo-Remake',
         screenshot: '/images/tauri-todo.png',
         overview: {
-            ko: 'AES-256-GCM 암호화를 적용한 고성능 데스크톱 앱',
-            ja: 'AES-256-GCMアルゴリズムによるデータ暗号化を適用したデスクトップアプリ',
+            ko: 'Rust와 Tauri를 사용한 데스크톱 앱, AES-256-GCM 암호화 시도',
+            ja: 'RustとTauriを使用したデスクトップアプリ、AES-256-GCM暗号化試行',
         },
     },
     {
