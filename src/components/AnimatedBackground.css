@@ -1,0 +1,93 @@
+/* LogBookIntro 스타일 배경 애니메이션 */
+
+/* stars: 10개 원, radii 0.4~1.5, opacity 0.5~0.9 */
+/* twinkling: 5개 원, opacity 0.2~0.5 */
+/* clouds: 베지어 곡선 stroke */
+
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.animated-bg__stars,
+.animated-bg__twinkling,
+.animated-bg__clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* stars: 검정 배경 + 흰색 별 패턴, 대각선 이동 200s */
+.animated-bg__stars {
+  background-color: #000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='10' cy='15' r='0.8' fill='%23fff' opacity='0.9'/%3E%3Ccircle cx='45' cy='8' r='0.5' fill='%23fff' opacity='0.7'/%3E%3Ccircle cx='78' cy='22' r='1.2' fill='%23fff' opacity='0.85'/%3E%3Ccircle cx='5' cy='55' r='0.4' fill='%23fff' opacity='0.5'/%3E%3Ccircle cx='65' cy='48' r='1' fill='%23fff' opacity='0.8'/%3E%3Ccircle cx='92' cy='70' r='0.6' fill='%23fff' opacity='0.6'/%3E%3Ccircle cx='25' cy='85' r='1.5' fill='%23fff' opacity='0.75'/%3E%3Ccircle cx='55' cy='90' r='0.4' fill='%23fff' opacity='0.55'/%3E%3Ccircle cx='85' cy='5' r='0.7' fill='%23fff' opacity='0.65'/%3E%3Ccircle cx='35' cy='65' r='1.1' fill='%23fff' opacity='0.7'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  animation: move-twink-back 200s linear infinite;
+}
+
+/* twinkling: 투명 + 작은 반짝임, 100s (더 빠름) */
+.animated-bg__twinkling {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='20' cy='30' r='0.4' fill='%23fff' opacity='0.3'/%3E%3Ccircle cx='60' cy='15' r='0.3' fill='%23fff' opacity='0.2'/%3E%3Ccircle cx='90' cy='50' r='0.5' fill='%23fff' opacity='0.4'/%3E%3Ccircle cx='15' cy='80' r='0.35' fill='%23fff' opacity='0.25'/%3E%3Ccircle cx='75' cy='88' r='0.45' fill='%23fff' opacity='0.35'/%3E%3C/svg%3E");
+  background-size: 300px 300px;
+  background-repeat: repeat;
+  animation: move-twink-back 100s linear infinite;
+}
+
+/* clouds: 구름/파형 베지어 곡선, 가로 이동 200s */
+.animated-bg__clouds {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 100'%3E%3Cpath d='M0,50 Q50,20 100,50 T200,50 T300,50 T400,50' stroke='rgba(255,255,255,0.08)' stroke-width='1' fill='none'/%3E%3Cpath d='M0,70 Q80,30 160,70 T320,70' stroke='rgba(255,255,255,0.06)' stroke-width='1' fill='none'/%3E%3Cpath d='M0,30 Q60,60 120,30 T240,30 T360,30' stroke='rgba(255,255,255,0.05)' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+  background-size: 400px 100px;
+  background-repeat: repeat;
+  animation: move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-bg__stars {
+    animation-duration: 300s;
+  }
+  .animated-bg__twinkling {
+    animation-duration: 150s;
+  }
+  .animated-bg__clouds {
+    animation-duration: 300s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-bg__stars,
+  .animated-bg__twinkling,
+  .animated-bg__clouds {
+    animation: none;
+  }
+}

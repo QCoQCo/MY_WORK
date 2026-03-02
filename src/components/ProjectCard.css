@@ -7,12 +7,14 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   overflow: hidden;
-  transition: border-color 0.2s, background 0.2s;
+  transition: border-color 0.2s, background 0.2s, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-card:hover {
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .project-card__thumb {
@@ -123,7 +125,7 @@
   font-weight: 500;
   border-radius: 6px;
   border: 1px solid transparent;
-  transition: opacity 0.2s, background 0.2s, color 0.2s;
+  transition: opacity 0.2s, background 0.2s, color 0.2s, transform 0.2s;
   text-decoration: none;
 }
 
@@ -133,7 +135,8 @@
 }
 
 .project-card__links .btn-github:hover {
-  opacity: 0.9;
+  opacity: 0.95;
+  transform: translateY(-1px);
 }
 
 .project-card__links .btn-deploy {
@@ -143,4 +146,5 @@
 
 .project-card__links .btn-deploy:hover {
   background: #0da;
+  transform: translateY(-1px);
 }

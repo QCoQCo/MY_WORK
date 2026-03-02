@@ -41,6 +41,8 @@
 
 #footer .ft_contact a:hover {
   color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 #footer .copyright {

@@ -4,8 +4,8 @@
 }
 
 .page-skills__inner {
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: var(--page-max-width, 1000px);
+  margin: 0 auto;
 }
 
 .skills-layout {
@@ -46,15 +46,13 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 4px;
     cursor: pointer;
-    transition:
-        color 0.2s,
-        background 0.2s,
-        border-color 0.2s;
+    transition: color 0.2s, background 0.2s, border-color 0.2s, transform 0.2s;
 }
 
 .skills-tab:hover {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     border-color: rgba(255, 255, 255, 0.3);
+    transform: translateX(2px);
 }
 
 .skills-tab--active {
