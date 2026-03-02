@@ -119,7 +119,10 @@
 
 .project-card__links .btn-github,
 .project-card__links .btn-deploy {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
   padding: 0.5rem 1rem;
   font-size: 0.85rem;
   font-weight: 500;
@@ -147,4 +150,19 @@
 .project-card__links .btn-deploy:hover {
   background: #0da;
   transform: translateY(-1px);
+}
+
+/* R.3: 480px 이하 세부 조정 */
+@media (max-width: 480px) {
+  .project-card__body {
+    padding: 1rem 1rem;
+  }
+
+  .project-card__name {
+    font-size: 1rem;
+  }
+
+  .project-card__overview {
+    font-size: 0.85rem;
+  }
 }

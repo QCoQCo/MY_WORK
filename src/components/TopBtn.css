@@ -35,7 +35,14 @@
   }
 
   .top-btn button {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-btn {
+    right: 0.75rem;
+    bottom: 0.75rem;
   }
 }

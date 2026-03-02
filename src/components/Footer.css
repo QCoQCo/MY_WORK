@@ -49,3 +49,25 @@
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.8rem;
 }
+
+/* R.3: 480px 이하 */
+@media (max-width: 480px) {
+  #footer {
+    padding: 1.5rem 0.75rem;
+  }
+
+  #footer .ft_contact ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #footer .ft_contact li {
+    min-height: 44px;
+    justify-content: center;
+  }
+
+  #footer .ft_contact a {
+    padding: 0.5rem 0;
+  }
+}
