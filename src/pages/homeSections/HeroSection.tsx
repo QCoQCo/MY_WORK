@@ -2,7 +2,12 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../context';
 import { profile, jobSummary } from '../../data';
 
-const VIDEO_SOURCES = ['/videos/main_video.mp4', '/videos/main_video 2.mp4'];
+const VIDEO_SOURCES = [
+    '/videos/main_video 2.mp4',
+    '/videos/contact_video.mp4',
+    '/videos/rainbow.mp4',
+    '/videos/main_video.mp4',
+];
 
 const HeroSection = () => {
     const { t } = useLanguage();
@@ -31,7 +36,9 @@ const HeroSection = () => {
                 {VIDEO_SOURCES.map((src, i) => (
                     <video
                         key={src}
-                        ref={(el) => { videoRefs.current[i] = el; }}
+                        ref={(el) => {
+                            videoRefs.current[i] = el;
+                        }}
                         src={src}
                         muted
                         playsInline
