@@ -10,7 +10,7 @@ const ProjectsSection = () => {
 
   const sectionTitle = {
     en: 'PROJECTS',
-    localized: { ko: '다양한 도전으로 쌓은 프로젝트 경험', ja: '多様な挑戦で積んだプロジェクト経験' },
+    localized: { ko: '다양한 도전으로 쌓은 프로젝트 경험', ja: '多様な挑戦で積んだプロジェクト経験', en: 'Project Experience from Diverse Challenges' },
   };
 
   const previewProjects = projects.slice(0, PREVIEW_COUNT);
@@ -25,7 +25,7 @@ const ProjectsSection = () => {
           ))}
         </ul>
         <Link to="/projects" className="projects-section__more vm">
-          <span>{t({ ko: '전체 프로젝트 보기', ja: '全プロジェクトを見る' })}</span>
+          <span>{t({ ko: '전체 프로젝트 보기', ja: '全プロジェクトを見る', en: 'View all projects' })}</span>
         </Link>
       </div>
     </section>

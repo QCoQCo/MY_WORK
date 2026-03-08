@@ -82,6 +82,13 @@ const Header = () => {
                     >
                         JPN
                     </button>
+                    <button
+                        type='button'
+                        className={locale === 'en' ? 'on' : ''}
+                        onClick={() => setLocale('en')}
+                    >
+                        ENG
+                    </button>
                 </div>
 
                 <button
@@ -127,6 +134,13 @@ const Header = () => {
                                 onClick={() => setLocale('ja')}
                             >
                                 JPN
+                            </button>
+                            <button
+                                type='button'
+                                className={locale === 'en' ? 'on' : ''}
+                                onClick={() => setLocale('en')}
+                            >
+                                ENG
                             </button>
                         </div>
                     </div>

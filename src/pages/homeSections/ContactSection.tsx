@@ -8,12 +8,13 @@ const ContactSection = () => {
 
   const sectionTitle = {
     en: 'CONTACT',
-    localized: { ko: '함께 일하고 싶으시다면', ja: '共に働きたい方は' },
+    localized: { ko: '함께 일하고 싶으시다면', ja: '共に働きたい方は', en: 'If you\'d like to work together' },
   };
 
   const cta = {
     ko: '연락 주세요',
     ja: 'お問い合わせください',
+    en: 'Please get in touch',
   };
 
   return (

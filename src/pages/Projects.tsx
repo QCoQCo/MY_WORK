@@ -8,7 +8,7 @@ export default function Projects() {
 
   const sectionTitle = {
     en: 'PROJECTS',
-    localized: { ko: '다양한 도전으로 쌓은 프로젝트 경험', ja: '多様な挑戦で積んだプロジェクト経験' },
+    localized: { ko: '다양한 도전으로 쌓은 프로젝트 경험', ja: '多様な挑戦で積んだプロジェクト経験', en: 'Project Experience from Diverse Challenges' },
   };
 
   return (
