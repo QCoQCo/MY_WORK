@@ -22,11 +22,12 @@ const HeroSection = () => {
         videoRefs.current[activeIndex]?.play().catch(() => {});
     }, [activeIndex]);
 
-    const greeting = { ko: '안녕하세요, 저는', ja: '初めまして、私は' };
-    const closing = { ko: '입니다.', ja: 'です。' };
+    const greeting = { ko: '안녕하세요, 저는', ja: '初めまして、私は', en: 'Hello, I am' };
+    const closing = { ko: '입니다.', ja: 'です。', en: '.' };
     const tagline = {
         ko: '풀스택 개발자 · React · Rust · AWS',
         ja: 'フルスタック開発者 · React · Rust · AWS',
+        en: 'Full-stack Developer · React · Rust · AWS',
     };
 
     return (

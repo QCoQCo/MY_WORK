@@ -10,7 +10,7 @@ export default function Skills() {
 
     const sectionTitle = {
         en: 'SKILLS',
-        localized: { ko: '기술 스택', ja: '技術スタック' },
+        localized: { ko: '기술 스택', ja: '技術スタック', en: 'Tech Stack' },
     };
 
     const activeCategory = skills[activeIndex];
@@ -34,7 +34,7 @@ export default function Skills() {
                     </div>
                     <div className='skills-content'>
                         <h3 className='skills-content__title'>
-                            {t({ ko: 'Skill Stack', ja: 'Skill Stack' })} @{' '}
+                            {t({ ko: 'Skill Stack', ja: 'Skill Stack', en: 'Skill Stack' })} @{' '}
                             {t(activeCategory.category)}
                         </h3>
                         <ul className='skills-list'>

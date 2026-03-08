@@ -10,22 +10,22 @@ export default function About() {
 
   const sectionTitle = {
     en: 'ABOUT',
-    localized: { ko: '소개', ja: 'プロフィール' },
+    localized: { ko: '소개', ja: 'プロフィール', en: 'About' },
   };
 
   const selfIntroTitle = {
     en: 'SELF INTRODUCTION',
-    localized: { ko: '자기소개 및 지원동기', ja: '自己紹介・志望動機' },
+    localized: { ko: '자기소개 및 지원동기', ja: '自己紹介・志望動機', en: 'Self Introduction' },
   };
 
   const historyTitle = {
     en: 'HISTORY',
-    localized: { ko: '학력 및 과정 이력', ja: '学歴および課程履歴' },
+    localized: { ko: '학력 및 과정 이력', ja: '学歴および課程履歴', en: 'Education & History' },
   };
 
   const certTitle = {
     en: 'CERTIFICATIONS',
-    localized: { ko: '자격·면허', ja: '資格・免許' },
+    localized: { ko: '자격·면허', ja: '資格・免許', en: 'Certifications' },
   };
 
   const sortedEducation: TimelineItem[] = [...education].sort((a, b) =>
@@ -43,11 +43,11 @@ export default function About() {
               <dd>{t(profile.name)}</dd>
             </div>
             <div className="profile-dl__row">
-              <dt>{t({ ko: '생년월일', ja: '生年月日' })}</dt>
+              <dt>{t({ ko: '생년월일', ja: '生年月日', en: 'Date of Birth' })}</dt>
               <dd>{t(profile.birthdate)}</dd>
             </div>
             <div className="profile-dl__row">
-              <dt>{t({ ko: '성별', ja: '性別' })}</dt>
+              <dt>{t({ ko: '성별', ja: '性別', en: 'Gender' })}</dt>
               <dd>{t(profile.gender)}</dd>
             </div>
           </dl>

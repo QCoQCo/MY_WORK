@@ -1,10 +1,11 @@
 import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
 
-export type Locale = 'ko' | 'ja';
+export type Locale = 'ko' | 'ja' | 'en';
 
 export interface Translatable {
   ko: string;
   ja: string;
+  en?: string;
 }
 
 interface LanguageContextValue {
@@ -23,7 +24,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const t = useCallback(
-    (obj: Translatable): string => (locale === 'ko' ? obj.ko : obj.ja),
+    (obj: Translatable): string => {
+      if (locale === 'ko') return obj.ko;
+      if (locale === 'ja') return obj.ja;
+      return obj.en ?? obj.ko;
+    },
     [locale],
   );
 

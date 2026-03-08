@@ -3,22 +3,22 @@
  */
 export interface Project {
     id: string;
-    name: { ko: string; ja: string };
+    name: { ko: string; ja: string; en: string };
     period: string;
     tech: string[];
     github: string;
     deployUrl?: string;
     /** 단일 경로 또는 다중 경로(스와이퍼) */
     screenshot?: string | string[];
-    overview: { ko: string; ja: string };
-    team?: { ko: string; ja: string };
-    achievements?: { ko: string; ja: string }[];
+    overview: { ko: string; ja: string; en: string };
+    team?: { ko: string; ja: string; en: string };
+    achievements?: { ko: string; ja: string; en: string }[];
 }
 
 export const projects: Project[] = [
     {
         id: 'logbook',
-        name: { ko: 'LogBook', ja: 'LogBook' },
+        name: { ko: 'LogBook', ja: 'LogBook', en: 'LogBook' },
         period: '2025.07 ~ 2026.02',
         tech: [
             'React',
@@ -37,38 +37,42 @@ export const projects: Project[] = [
             '/images/log-book3.png',
             '/images/log-book4.png',
         ],
-        team: { ko: '3인 팀 (팀장)', ja: '全3名 (チームリーダー)' },
+        team: { ko: '3인 팀 (팀장)', ja: '全3名 (チームリーダー)', en: 'Team of 3 (Leader)' },
         overview: {
             ko: "'해적의 항해 일지'를 콘셉트로 한 블로그, 실시간 채팅, 음악 공유 기능 통합 차세대 소셜 플랫폼",
             ja: '「海賊の航海日誌」をコンセプトに、ブログ、リアルタイムチャット、音楽共有機能を統合した次世代ソーシャルプラットフォーム',
+            en: 'Next-gen social platform integrating blog, real-time chat, and music sharing with a "pirate\'s log" concept',
         },
         achievements: [
             {
                 ko: 'WebSocket 기반 실시간 알림 및 Firebase 다중 채팅방 구현',
                 ja: 'WebSocketベースのリアルタイム通知およびFirebase複数チャットルーム実装',
+                en: 'WebSocket-based real-time notifications and Firebase multi-chat room implementation',
             },
             {
                 ko: 'React Grid Layout·메모이제이션 기반 렌더링 최적화',
                 ja: 'React Grid Layoutおよびメモイゼーションによるレンダリング最適化',
+                en: 'Rendering optimization with React Grid Layout and memoization',
             },
         ],
     },
     {
         id: 'arata-busan',
-        name: { ko: 'ARATA BUSAN', ja: 'あらた釜山' },
+        name: { ko: 'ARATA BUSAN', ja: 'あらた釜山', en: 'ARATA BUSAN' },
         period: '2025.07 ~ 2026.01',
         tech: ['Java', 'Spring Boot', 'MyBatis', 'OAuth2', 'Kakao Map API', 'Thymeleaf', 'MySQL'],
         github: 'https://github.com/QCoQCo/ORORAproject',
         screenshot: ['/images/arata1.png', '/images/arata2.png', '/images/arata3.png'],
-        team: { ko: '5인 팀 (팀장)', ja: '全5名 (チームリーダー)' },
+        team: { ko: '5인 팀 (팀장)', ja: '全5名 (チームリーダー)', en: 'Team of 5 (Leader)' },
         overview: {
             ko: '방한 일본인 및 영어권 관광객 타겟 부산 명소 소개 종합 웹 플랫폼',
             ja: '訪韓日本人および英語圏の観光客をターゲットにした釜山の隠れた名所を紹介する総合ウェブプラットフォーム',
+            en: 'Comprehensive web platform introducing Busan attractions for Japanese and English-speaking visitors',
         },
     },
     {
         id: 'r-r-gebra',
-        name: { ko: 'R_R_Gebra', ja: 'R_R_Gebra' },
+        name: { ko: 'R_R_Gebra', ja: 'R_R_Gebra', en: 'R_R_Gebra' },
         period: '2025.12 ~ 2026.02',
         tech: ['Rust', 'Tauri', 'React', 'TypeScript', 'Mafs', 'MathLive'],
         github: 'https://github.com/QCoQCo/R_R_Gebra',
@@ -76,11 +80,12 @@ export const projects: Project[] = [
         overview: {
             ko: '수학 학습용 복잡한 함수 그래프를 고속 렌더링하는 GeoGebra 스타일 데스크톱 앱',
             ja: '複雑な関数のグラフを高速かつ滑らかに可視化するGeoGebra風デスクトップアプリケーション',
+            en: 'GeoGebra-style desktop app for high-speed rendering of complex function graphs for math learning',
         },
     },
     {
         id: 'ws-chat',
-        name: { ko: 'WS Chat', ja: 'WS Chat' },
+        name: { ko: 'WS Chat', ja: 'WS Chat', en: 'WS Chat' },
         period: '2025.07',
         tech: ['React', 'TypeScript', 'Vite', 'Node.js', 'WebSocket'],
         github: 'https://github.com/QCoQCo/WS-Chat',
@@ -88,11 +93,12 @@ export const projects: Project[] = [
         overview: {
             ko: 'WebSocket 기반 클라이언트 간 실시간 메시지 통신 채팅 데모 앱',
             ja: 'クライアント間のリアルタイムメッセージ通信が可能なチャットデモアプリ',
+            en: 'Chat demo app with WebSocket-based real-time client-to-client messaging',
         },
     },
     {
         id: 'rogue01',
-        name: { ko: 'Rogue01', ja: 'Rogue01' },
+        name: { ko: 'Rogue01', ja: 'Rogue01', en: 'Rogue01' },
         period: '2025.07',
         tech: ['Java 21', 'Swing', 'Maven'],
         github: 'https://github.com/QCoQCo/Rogue01',
@@ -100,11 +106,12 @@ export const projects: Project[] = [
         overview: {
             ko: '던전 탐색과 JRPG 전투를 결합한 클래식 로그라이크 데스크톱 게임',
             ja: 'ダンジョン探索とJRPGスタイルのターン制戦闘を組み合わせたローグライクデスクトップゲーム',
+            en: 'Classic roguelike desktop game combining dungeon exploration with JRPG-style turn-based combat',
         },
     },
     {
         id: 'kanji-searcher',
-        name: { ko: '일본어 한자 검색', ja: '日本語漢字検索' },
+        name: { ko: '일본어 한자 검색', ja: '日本語漢字検索', en: 'Japanese Kanji Search' },
         period: '2025.05',
         tech: ['React', 'Vite', 'TypeScript', 'Jisho API', 'Kanji API', 'Netlify Functions'],
         github: 'https://github.com/QCoQCo/Kanji-Searcher',
@@ -113,11 +120,12 @@ export const projects: Project[] = [
         overview: {
             ko: 'JLPT 학습 효율화를 위한 획순 GIF 및 필터링 제공 검색 툴. Netlify Functions로 CORS 우회 구현',
             ja: 'JLPT受験に向けた学習効率化を目的とした検索ツール。Netlify Functionsを用いたAPIプロキシでCORS回避',
+            en: 'JLPT study tool with stroke-order GIFs and filtering. CORS workaround via Netlify Functions',
         },
     },
     {
         id: 'todov2',
-        name: { ko: 'Todo 풀스택', ja: 'Todo フルスタック' },
+        name: { ko: 'Todo 풀스택', ja: 'Todo フルスタック', en: 'Todo Full-stack' },
         period: '2025.03',
         tech: ['React', 'Node.js', 'Express', 'MySQL', 'AWS RDS', 'Google OAuth 2.0'],
         github: 'https://github.com/QCoQCo/TODOV2',
@@ -125,11 +133,12 @@ export const projects: Project[] = [
         overview: {
             ko: '소셜 로그인, 활동 통계 기능을 갖춘 풀스택 웹 애플리케이션. AWS RDS 인프라 구축',
             ja: 'Google OAuth連携や統計機能を備えたフルスタックWebアプリ。AWS RDSを用いたDBインフラ構築',
+            en: 'Full-stack web app with social login and activity stats. AWS RDS infrastructure',
         },
     },
     {
         id: 'ferrari',
-        name: { ko: '페라리 리디자인', ja: 'フェラーリ リデザイン' },
+        name: { ko: '페라리 리디자인', ja: 'フェラーリ リデザイン', en: 'Ferrari Redesign' },
         period: '2024.12',
         tech: ['HTML', 'CSS', 'JavaScript', 'Figma', 'Netlify'],
         github: 'https://github.com/QCoQCo/figma_ferrari',
@@ -138,11 +147,12 @@ export const projects: Project[] = [
         overview: {
             ko: '페라리 브랜드 사이트 리디자인',
             ja: 'フェラーリ ブランドサイト・リデザイン',
+            en: 'Ferrari brand site redesign',
         },
     },
     {
         id: 'tauri-todo',
-        name: { ko: 'Todo (Tauri)', ja: 'Todo (Tauri)' },
+        name: { ko: 'Todo (Tauri)', ja: 'Todo (Tauri)', en: 'Todo (Tauri)' },
         period: '2024.08',
         tech: ['Rust', 'Tauri', 'JavaScript', 'Chart.js', 'AES-GCM'],
         github: 'https://github.com/QCoQCo/Rust-Tauri-Todo-Remake',
@@ -150,11 +160,12 @@ export const projects: Project[] = [
         overview: {
             ko: 'Rust와 Tauri를 사용한 데스크톱 앱, AES-256-GCM 암호화 시도',
             ja: 'RustとTauriを使用したデスクトップアプリ、AES-256-GCM暗号化試行',
+            en: 'Desktop app with Rust and Tauri; AES-256-GCM encryption attempt',
         },
     },
     {
         id: 'calculator',
-        name: { ko: '계산기 (GUI)', ja: '計算機 (GUI)' },
+        name: { ko: '계산기 (GUI)', ja: '計算機 (GUI)', en: 'Calculator (GUI)' },
         period: '2024.06 ~ 2025.12',
         tech: ['Rust', 'Iced', 'C++', 'GCC', 'CMake'],
         github: 'https://github.com/QCoQCo/RUST-GUI-Calculator',
@@ -162,11 +173,12 @@ export const projects: Project[] = [
         overview: {
             ko: '재귀 하향 파서를 직접 구현한 CLI 버전을 Iced 프레임워크로 GUI 확장',
             ja: '再帰下降パーサーを実装したCLI版から、Icedフレームワークを用いたGUIへと拡張',
+            en: 'GUI extension of CLI calculator with recursive descent parser using Iced framework',
         },
     },
     {
         id: 'calculator-Rust-cli',
-        name: { ko: '계산기 (CLI)', ja: '計算機 (CLI)' },
+        name: { ko: '계산기 (CLI)', ja: '計算機 (CLI)', en: 'Calculator (CLI)' },
         period: '2024.06',
         tech: ['Rust'],
         github: 'https://github.com/QCoQCo/Rust-cli-calc',
@@ -174,11 +186,12 @@ export const projects: Project[] = [
         overview: {
             ko: 'Rust로 구현한 CLI 계산기',
             ja: 'Rustで実装したCLI計算機',
+            en: 'CLI calculator implemented in Rust',
         },
     },
     {
         id: 'calculator-C++-cli',
-        name: { ko: 'C++ 계산기 (CLI)', ja: 'C++ 計算機 (CLI)' },
+        name: { ko: 'C++ 계산기 (CLI)', ja: 'C++ 計算機 (CLI)', en: 'C++ Calculator (CLI)' },
         period: '2024.06',
         tech: ['C++', 'Cmake'],
         github: 'https://github.com/QCoQCo/CPP_CLI_CALC_REMAKE',
@@ -186,11 +199,12 @@ export const projects: Project[] = [
         overview: {
             ko: 'C++로 구현한 CLI 계산기',
             ja: 'C++で実装したCLI計算機',
+            en: 'CLI calculator implemented in C++',
         },
     },
     {
         id: 'stwch',
-        name: { ko: '스톱워치 & To-Do', ja: 'ストップウォッチ＆To-Do' },
+        name: { ko: '스톱워치 & To-Do', ja: 'ストップウォッチ＆To-Do', en: 'Stopwatch & To-Do' },
         period: '2024.06',
         tech: ['Python', 'tkinter', 'PyInstaller'],
         github: 'https://github.com/QCoQCo/stwch',
@@ -198,6 +212,7 @@ export const projects: Project[] = [
         overview: {
             ko: 'macOS용 스톱워치 및 To-Do 리스트',
             ja: 'macOS用ストップウォッチおよびTo-Doリスト',
+            en: 'macOS stopwatch and To-Do list app',
         },
     },
 ];

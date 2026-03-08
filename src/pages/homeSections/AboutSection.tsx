@@ -10,13 +10,13 @@ const AboutSection = () => {
 
   const sectionTitle = {
     en: 'HISTORY',
-    localized: { ko: '학력 및 과정 이력', ja: '学歴および課程履歴' },
+    localized: { ko: '학력 및 과정 이력', ja: '学歴および課程履歴', en: 'Education & History' },
   };
 
-  type TimelineItem = { year: string; ko: string; ja: string };
+  type TimelineItem = { year: string; ko: string; ja: string; en?: string };
   const merged: TimelineItem[] = [
-    ...education.map((e: TimelineItem) => ({ year: e.year, ko: e.ko, ja: e.ja })),
-    ...experience.map((e: TimelineItem) => ({ year: e.year, ko: e.ko, ja: e.ja })),
+    ...education.map((e) => ({ year: e.year, ko: e.ko, ja: e.ja, en: e.en })),
+    ...experience.map((e: { year: string; ko: string; ja: string }) => ({ year: e.year, ko: e.ko, ja: e.ja })),
   ].sort((a, b) => b.year.localeCompare(a.year));
 
   const displayItems = merged.slice(0, TIMELINE_ITEMS);
