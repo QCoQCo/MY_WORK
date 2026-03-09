@@ -3,44 +3,44 @@ import { createContext, useContext, useState, useCallback, type ReactNode } from
 export type Locale = 'ko' | 'ja' | 'en';
 
 export interface Translatable {
-  ko: string;
-  ja: string;
-  en?: string;
+    ko: string;
+    ja: string;
+    en?: string;
 }
 
 interface LanguageContextValue {
-  locale: Locale;
-  setLocale: (locale: Locale) => void;
-  t: (obj: Translatable) => string;
+    locale: Locale;
+    setLocale: (locale: Locale) => void;
+    t: (obj: Translatable) => string;
 }
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>('ko');
+    const [locale, setLocaleState] = useState<Locale>('ja');
 
-  const setLocale = useCallback((l: Locale) => {
-    setLocaleState(l);
-  }, []);
+    const setLocale = useCallback((l: Locale) => {
+        setLocaleState(l);
+    }, []);
 
-  const t = useCallback(
-    (obj: Translatable): string => {
-      if (locale === 'ko') return obj.ko;
-      if (locale === 'ja') return obj.ja;
-      return obj.en ?? obj.ko;
-    },
-    [locale],
-  );
+    const t = useCallback(
+        (obj: Translatable): string => {
+            if (locale === 'ko') return obj.ko;
+            if (locale === 'ja') return obj.ja;
+            return obj.en ?? obj.ko;
+        },
+        [locale],
+    );
 
-  return (
-    <LanguageContext.Provider value={{ locale, setLocale, t }}>
-      {children}
-    </LanguageContext.Provider>
-  );
+    return (
+        <LanguageContext.Provider value={{ locale, setLocale, t }}>
+            {children}
+        </LanguageContext.Provider>
+    );
 }
 
 export function useLanguage() {
-  const ctx = useContext(LanguageContext);
-  if (!ctx) throw new Error('useLanguage must be used within LanguageProvider');
-  return ctx;
+    const ctx = useContext(LanguageContext);
+    if (!ctx) throw new Error('useLanguage must be used within LanguageProvider');
+    return ctx;
 }
