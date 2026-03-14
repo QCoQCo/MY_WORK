@@ -62,12 +62,13 @@ export const projects: Project[] = [
         period: '2025.07 ~ 2026.01',
         tech: ['Java', 'Spring Boot', 'MyBatis', 'OAuth2', 'Kakao Map API', 'Thymeleaf', 'MySQL'],
         github: 'https://github.com/QCoQCo/ORORAproject',
+        deployUrl: 'https://aratabusan.netlify.app/',
         screenshot: ['/images/arata1.png', '/images/arata2.png', '/images/arata3.png'],
         team: { ko: '5인 팀 (팀장)', ja: '全5名 (チームリーダー)', en: 'Team of 5 (Leader)' },
         overview: {
-            ko: '방한 일본인 및 영어권 관광객 타겟 부산 명소 소개 종합 웹 플랫폼',
-            ja: '訪韓日本人および英語圏の観光客をターゲットにした釜山の隠れた名所を紹介する総合ウェブプラットフォーム',
-            en: 'Comprehensive web platform introducing Busan attractions for Japanese and English-speaking visitors',
+            ko: '방한 일본인 및 영어권 관광객 타겟 부산 명소 소개 종합 웹 플랫폼(데모버전 배포중)',
+            ja: '訪韓日本人および英語圏の観光客をターゲットにした釜山の隠れた名所を紹介する総合ウェブプラットフォーム(デモバージョン公開中)',
+            en: 'Comprehensive web platform introducing Busan attractions for Japanese and English-speaking visitors(Demo version available)',
         },
     },
     {
