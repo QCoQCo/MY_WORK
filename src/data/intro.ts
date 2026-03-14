@@ -18,9 +18,9 @@ export const introSummary = {
 } as const;
 
 export const introStrength = {
-    ko: 'React부터 AWS 인프라까지 풀스택 개발을 연마했고, 프로젝트를 통해 UI/UX 최적화와 확장성 있는 설계의 중요성을 체득했습니다. TOEIC 880점·JLPT N2로 글로벌 환경에서 즉시 기여할 준비가 되어 있습니다.',
-    ja: 'ReactからAWSインフラまでフルスタック開発を磨き、プロジェクトを通じてUI/UX最適化やスケーラブルな設計の重要性を体得しました。TOEIC 880点・JLPT N2により、グローバル環境で即戦力として貢献できる準備が整っております。',
-    en: 'I have honed full-stack development from React to AWS infrastructure and learned the importance of UI/UX optimization and scalable design through projects. With TOEIC 880 and JLPT N2, I am ready to contribute in global environments.',
+    ko: 'React부터 AWS 인프라까지 풀스택 개발을 연마했고, 프로젝트를 통해 UI/UX 최적화와 확장성 있는 설계의 중요성을 체득했습니다. 지속적인 외국어 공부로 글로벌 환경에서 즉시 기여할 준비가 되어 있습니다.',
+    ja: 'ReactからAWSインフラまでフルスタック開発を磨き、プロジェクトを通じてUI/UX最適化やスケーラブルな設計の重要性を体得しました。継続的な語学学習により、グローバル環境で即戦力として貢献できる準備が整っております。',
+    en: 'I have honed full-stack development from React to AWS infrastructure and learned the importance of UI/UX optimization and scalable design through projects. With continuous language study, I am ready to contribute in global environments.',
 } as const;
 
 /** 기술 상세 (Skills 등 참고용) */
@@ -41,5 +41,9 @@ export const selfPr = {
         ja: '主要スタック: React, TypeScript, Rust, Spring Boot, MySQL, Firebase, AWS。',
         en: 'Tech stack: React, TypeScript, Rust, Spring Boot, MySQL, Firebase, AWS.',
     },
-    language: { ko: 'TOEIC 880점, JLPT N2.', ja: 'TOEIC 880点、JLPT N2。', en: 'TOEIC 880, JLPT N2.' },
+    language: {
+        ko: 'TOEIC 880점, JLPT N2.',
+        ja: 'TOEIC 880点、JLPT N2。',
+        en: 'TOEIC 880, JLPT N2.',
+    },
 } as const;
