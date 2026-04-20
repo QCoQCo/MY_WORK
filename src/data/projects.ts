@@ -62,7 +62,7 @@ export const projects: Project[] = [
         period: '2025.07 ~ 2026.01',
         tech: ['Java', 'Spring Boot', 'MyBatis', 'OAuth2', 'Kakao Map API', 'Thymeleaf', 'MySQL'],
         github: 'https://github.com/QCoQCo/ORORAproject',
-        deployUrl: 'https://aratabusan.netlify.app/',
+        deployUrl: 'https://www.arata-busan.com/',
         screenshot: ['/images/arata1.png', '/images/arata2.png', '/images/arata3.png'],
         team: { ko: '5인 팀 (팀장)', ja: '全5名 (チームリーダー)', en: 'Team of 5 (Leader)' },
         overview: {
