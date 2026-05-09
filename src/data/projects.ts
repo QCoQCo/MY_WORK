@@ -31,6 +31,7 @@ export const projects: Project[] = [
             'MySQL',
         ],
         github: 'https://github.com/QCoQCo/LogBook',
+        deployUrl: 'https://logbooks.cc/',
         screenshot: [
             '/images/log-book1.png',
             '/images/log-book2.png',
@@ -54,6 +55,16 @@ export const projects: Project[] = [
                 ja: 'React Grid Layoutおよびメモイゼーションによるレンダリング最適化',
                 en: 'Rendering optimization with React Grid Layout and memoization',
             },
+            {
+                ko: 'GHCR 및 Aiven Cloud DB를 활용한 클라우드 인프라 구축과 멀티 아키텍처 도커 빌드 최적화',
+                ja: 'GHCRおよびAiven Cloud DBを活用したクラウドインフラ構築とマルチアーキテクチャDockerビルド最適化',
+                en: 'Cloud infrastructure setup and multi-architecture Docker build optimization using GHCR and Aiven Cloud DB',
+            },
+            {
+                ko: '오라클 클라우드 서버 내 .env 단독 보관을 통한 배포 환경 변수 보안 강화',
+                ja: 'Oracle Cloudサーバー内での.env単独保管によるデプロイ環境変数セキュリティの強化',
+                en: 'Enhanced deployment environment variable security through isolated .env storage in Oracle Cloud server',
+            },
         ],
     },
     {
@@ -70,6 +81,18 @@ export const projects: Project[] = [
             ja: '訪韓日本人および英語圏の観光客をターゲットにした釜山の隠れた名所を紹介する総合ウェブプラットフォーム(デモバージョン公開中)',
             en: 'Comprehensive web platform introducing Busan attractions for Japanese and English-speaking visitors(Demo version available)',
         },
+        achievements: [
+            {
+                ko: 'Node.js 기반 백엔드 환경 및 Docker Hub를 활용한 컨테이너 기반 배포 파이프라인 구축',
+                ja: 'Node.jsベースのバックエンド環境およびDocker Hubを活用したコンテナデプロイパイプライン構築',
+                en: 'Node.js-based backend environment and container deployment pipeline setup using Docker Hub',
+            },
+            {
+                ko: '도커 로컬 MySQL 연동 및 GitHub Secrets를 활용한 환경 변수 보안 관리',
+                ja: 'DockerローカルMySQL連携およびGitHub Secretsを活用した環境変数セキュリティ管理',
+                en: 'Docker local MySQL integration and environment variable security management using GitHub Secrets',
+            },
+        ],
     },
     {
         id: 'r-r-gebra',
