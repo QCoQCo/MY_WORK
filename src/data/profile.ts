@@ -2,10 +2,15 @@
  * 기본 정보 (resume.md)
  */
 export const profile = {
+    // name: {
+    //     ko: '강용훈',
+    //     ja: '姜 龍勲 (カン ヨンフン)',
+    //     en: 'Kang Yonghun',
+    // },
     name: {
-        ko: '강용훈',
-        ja: '姜 龍勲 (カン ヨンフン)',
-        en: 'Kang Yonghun',
+        ko: 'CO_s_MOS',
+        ja: 'CO_s_MOS',
+        en: 'CO_s_MOS',
     },
     birthdate: {
         ko: '1998년 7월 31일',
