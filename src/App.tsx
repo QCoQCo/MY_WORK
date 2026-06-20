@@ -1,6 +1,6 @@
 import './App.css';
 import { Header, Footer, LocalNav, TopBtn, AnimatedBackground, ScrollToTop } from './components';
-import { Home, About, Projects, Skills, Contact } from './pages';
+import { Home, About, Projects, ProjectDetail, Skills, Contact } from './pages';
 import { LanguageProvider } from './context';
 import { BrowserRouter, Outlet, Route, Routes, useLocation } from 'react-router-dom';
 
@@ -33,6 +33,7 @@ function App() {
                             <Route index element={<Home />} />
                             <Route path='about' element={<About />} />
                             <Route path='projects' element={<Projects />} />
+                            <Route path='projects/:id' element={<ProjectDetail />} />
                             <Route path='skills' element={<Skills />} />
                             <Route path='contact' element={<Contact />} />
                         </Route>
