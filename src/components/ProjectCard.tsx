@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/swiper.css';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context';
 import type { Project } from '../data';
 import './ProjectCard.css';
@@ -14,13 +15,29 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, showAchievements = false }: ProjectCardProps) => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
   const screenshots = project.screenshot ?? DEFAULT_SCREENSHOT;
   const images = Array.isArray(screenshots)
     ? (screenshots.length > 0 ? screenshots : [DEFAULT_SCREENSHOT])
     : [screenshots];
 
+  const handleCardClick = () => {
+    navigate(`/projects/${project.id}`);
+  };
+
+  const stopPropagation = (e: React.MouseEvent) => {
+    e.stopPropagation();
+  };
+
   return (
-    <li className="project-card">
+    <li
+      className="project-card project-card--clickable"
+      onClick={handleCardClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === 'Enter' && handleCardClick()}
+      aria-label={`${t(project.name)} 상세 보기`}
+    >
       <div className="project-card__thumb">
         {images.length > 1 ? (
           <Swiper
@@ -59,7 +76,7 @@ const ProjectCard = ({ project, showAchievements = false }: ProjectCardProps) =>
             ))}
           </ul>
         )}
-        <div className="project-card__links">
+        <div className="project-card__links" onClick={stopPropagation}>
           <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-github">
             <span>GitHub</span>
           </a>
