@@ -10,10 +10,9 @@ const DEFAULT_SCREENSHOT = '/images/default.jpg';
 
 interface ProjectCardProps {
   project: Project;
-  showAchievements?: boolean;
 }
 
-const ProjectCard = ({ project, showAchievements = false }: ProjectCardProps) => {
+const ProjectCard = ({ project }: ProjectCardProps) => {
   const { t } = useLanguage();
   const navigate = useNavigate();
   const screenshots = project.screenshot ?? DEFAULT_SCREENSHOT;
@@ -23,10 +22,6 @@ const ProjectCard = ({ project, showAchievements = false }: ProjectCardProps) =>
 
   const handleCardClick = () => {
     navigate(`/projects/${project.id}`);
-  };
-
-  const stopPropagation = (e: React.MouseEvent) => {
-    e.stopPropagation();
   };
 
   return (
@@ -69,23 +64,7 @@ const ProjectCard = ({ project, showAchievements = false }: ProjectCardProps) =>
             </span>
           ))}
         </div>
-        {showAchievements && project.achievements && project.achievements.length > 0 && (
-          <ul className="project-card__achievements">
-            {project.achievements.map((a, i) => (
-              <li key={i}>{t(a)}</li>
-            ))}
-          </ul>
-        )}
-        <div className="project-card__links" onClick={stopPropagation}>
-          <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-github">
-            <span>GitHub</span>
-          </a>
-          {project.deployUrl && (
-            <a href={project.deployUrl} target="_blank" rel="noopener noreferrer" className="btn-deploy">
-              <span>Deploy</span>
-            </a>
-          )}
-        </div>
+
       </div>
     </li>
   );

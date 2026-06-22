@@ -17,7 +17,7 @@ export default function Projects() {
         <SectionTitle en={sectionTitle.en} localized={t(sectionTitle.localized)} />
         <ul className="project-cards project-cards--full">
           {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} showAchievements />
+            <ProjectCard key={project.id} project={project} />
           ))}
         </ul>
       </div>
