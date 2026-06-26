@@ -92,6 +92,11 @@ button {
     );
 }
 
+/* 홈 페이지: wrapper 투명 — fixed 비디오가 비치도록 */
+#wrapper.wrapper--home {
+    background-color: transparent;
+}
+
 #main-content {
     padding-top: 60px; /* header 높이 */
     min-height: calc(100vh - 60px);
