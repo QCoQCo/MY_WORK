@@ -29,7 +29,7 @@ export default function About() {
     };
 
     const sortedEducation: TimelineItem[] = [...education].sort((a, b) =>
-        b.year.localeCompare(a.year),
+        a.year.localeCompare(b.year),
     );
 
     return (

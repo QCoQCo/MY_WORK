@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../context';
 import './Header.css';
 
-const SCROLL_THRESHOLD = 50;
+const SCROLL_THRESHOLD = 100;
 
 const NAV_ITEMS = [
     { path: '/', label: 'Home' },
@@ -54,14 +54,18 @@ const Header = () => {
         <header id='header' className={scrolled ? 'on' : ''}>
             <div className='hd_inner'>
                 <h1 className='logo'>
-                    <Link to='/' onClick={closeMenu}>CO_s_MOS</Link>
+                    <Link to='/' onClick={closeMenu}>
+                        CO_s_MOS
+                    </Link>
                 </h1>
 
                 <nav className='gnb' aria-label='메인 메뉴'>
                     <ul>
                         {NAV_ITEMS.map(({ path, label }) => (
                             <li key={path}>
-                                <Link to={path} onClick={closeMenu}>{label}</Link>
+                                <Link to={path} onClick={closeMenu}>
+                                    {label}
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -115,7 +119,9 @@ const Header = () => {
                             <ul>
                                 {NAV_ITEMS.map(({ path, label }) => (
                                     <li key={path}>
-                                        <Link to={path} onClick={closeMenu}>{label}</Link>
+                                        <Link to={path} onClick={closeMenu}>
+                                            {label}
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
