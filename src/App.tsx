@@ -9,7 +9,7 @@ const Layout = () => {
     const showAnimatedBg = pathname !== '/';
 
     return (
-        <div id='wrapper' className={showAnimatedBg ? 'wrapper--with-animated-bg' : ''}>
+        <div id='wrapper' className={showAnimatedBg ? 'wrapper--with-animated-bg' : 'wrapper--home'}>
             {showAnimatedBg && <AnimatedBackground />}
             <Header />
             <LocalNav />
