@@ -6,40 +6,48 @@ import SectionTitle from '../../components/SectionTitle';
 const TIMELINE_ITEMS = 6;
 
 const AboutSection = () => {
-  const { t } = useLanguage();
+    const { t } = useLanguage();
 
-  const sectionTitle = {
-    en: 'HISTORY',
-    localized: { ko: '학력 및 과정 이력', ja: '学歴および課程履歴', en: 'Education & History' },
-  };
+    const sectionTitle = {
+        en: 'HISTORY',
+        localized: { ko: '학력 및 과정 이력', ja: '学歴および課程履歴', en: 'Education & History' },
+    };
 
-  type TimelineItem = { year: string; ko: string; ja: string; en?: string };
-  const merged: TimelineItem[] = [
-    ...education.map((e) => ({ year: e.year, ko: e.ko, ja: e.ja, en: e.en })),
-    ...experience.map((e: { year: string; ko: string; ja: string }) => ({ year: e.year, ko: e.ko, ja: e.ja })),
-  ].sort((a, b) => b.year.localeCompare(a.year));
+    type TimelineItem = { year: string; ko: string; ja: string; en?: string };
+    const merged: TimelineItem[] = [
+        ...education.map((e) => ({ year: e.year, ko: e.ko, ja: e.ja, en: e.en })),
+        ...experience.map((e: { year: string; ko: string; ja: string }) => ({
+            year: e.year,
+            ko: e.ko,
+            ja: e.ja,
+        })),
+    ].sort((a, b) => a.year.localeCompare(b.year));
 
-  const displayItems = merged.slice(0, TIMELINE_ITEMS);
+    const displayItems = merged.slice(-TIMELINE_ITEMS);
 
-  return (
-    <section className="about-section" id="about">
-      <div className="about-section__inner">
-        <SectionTitle en={sectionTitle.en} localized={t(sectionTitle.localized)} />
-        <div className="timeline">
-          {displayItems.map((item, i) => (
-            <div key={`${item.year}-${i}-${item.ko.slice(0, 15)}`} className="timeline__item">
-              <strong className="timeline__year">{item.year}</strong>
-              <span className="timeline__line" />
-              <p className="timeline__text">{t(item)}</p>
+    return (
+        <section className='about-section' id='about'>
+            <div className='about-section__inner'>
+                <SectionTitle en={sectionTitle.en} localized={t(sectionTitle.localized)} />
+                <div className='timeline'>
+                    <span className='timeline__dots'>. . .</span>
+                    {displayItems.map((item, i) => (
+                        <div
+                            key={`${item.year}-${i}-${item.ko.slice(0, 15)}`}
+                            className='timeline__item'
+                        >
+                            <strong className='timeline__year'>{item.year}</strong>
+                            <span className='timeline__line' />
+                            <p className='timeline__text'>{t(item)}</p>
+                        </div>
+                    ))}
+                </div>
+                <Link to='/about' className='vm'>
+                    <span>VIEW MORE</span>
+                </Link>
             </div>
-          ))}
-        </div>
-        <Link to="/about" className="vm">
-          <span>VIEW MORE</span>
-        </Link>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default AboutSection;
