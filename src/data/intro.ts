@@ -12,9 +12,9 @@ export const jobSummary = {
  * ① 자율적 문제해결·학습 / ② 풀스택 역량 / ③ 글로벌 어학력
  */
 export const introSummary = {
-    ko: '"불편함을 기술로 해결하는 것"에 기쁨을 느끼며, 독학으로 Rust·Python 등 여러 언어를 습득했습니다. 단순한 지식 습득에 머물지 않고 스톱워치·Rust 계산기 등을 직접 기획·개발하며 실용적 아웃풋을 중시합니다.',
-    ja: '「不便さを技術で解決する」ことに喜びを感じ、独学でRust・Pythonなど複数の言語を習得しました。知識の習得にとどまらず、ストップウォッチやRust計算機などを自ら企画・開発し、実用的なアウトプットを重視しています。',
-    en: 'I take joy in "solving inconvenience with technology" and have taught myself multiple languages including Rust and Python. Beyond mere knowledge acquisition, I prioritize practical output by planning and developing tools such as a stopwatch and Rust calculator.',
+    ko: '"불편함을 기술로 해결하는 것"에 기쁨을 느끼며, 독학을 해왔습니다. 단순한 지식 습득에 머물지 않고 직접 사용할 어플리케이션 등을 기획·개발하며 실용적 아웃풋을 중시합니다.',
+    ja: '「不便さを技術で解決する」ことに喜びを感じ、独学を続けています。知識の習得にとどまらず、実際に使用するアプリケーションなどを自ら企画・開発し、実用的なアウトプットを重視しています。',
+    en: 'I take joy in "solving inconvenience with technology" and have taught myself multiple languages. Beyond mere knowledge acquisition, I prioritize practical output by planning and developing applications and tools.',
 } as const;
 
 export const introStrength = {
