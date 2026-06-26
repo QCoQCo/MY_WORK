@@ -1,5 +1,5 @@
 import { useLanguage } from '../context';
-import { profile, selfIntroSections, education, certifications } from '../data';
+import { profile, education, certifications } from '../data';
 import { SectionTitle } from '../components';
 import './About.css';
 
