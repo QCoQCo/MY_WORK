@@ -145,7 +145,7 @@
     flex-direction: column;
     gap: 2rem;
     transform: translateX(100%);
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
     box-shadow: -4px 0 24px rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
