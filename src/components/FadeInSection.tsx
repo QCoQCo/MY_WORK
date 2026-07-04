@@ -20,7 +20,7 @@ const FadeInSection = ({ children, className = '' }: FadeInSectionProps) => {
             ([entry]) => {
                 setVisible(entry.isIntersecting);
             },
-            { threshold: 0.3, rootMargin: '0px 0px -50px 0px' },
+            { threshold: 0, rootMargin: '0px 0px -50px 0px' },
         );
 
         observer.observe(el);
