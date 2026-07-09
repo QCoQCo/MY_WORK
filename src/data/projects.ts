@@ -17,6 +17,42 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        id: 'netcode-lab',
+        name: { ko: 'Netcode Lab', ja: 'Netcode Lab', en: 'Netcode Lab' },
+        period: '2025.11 ~ 2026.01',
+        tech: ['Node.js', 'WebSocket', 'HTML', 'CSS', 'JavaScript'],
+        github: 'https://github.com/QCoQCo/Net-delay-parry-hit-simulator',
+        screenshot: ['/images/netcode1.png', '/images/netcode2.png'],
+        team: { ko: '개인', ja: '個人', en: 'Solo' },
+        overview: {
+            ko: '딜레이와 롤백 넷코드의 동작 차이를 직접 확인하는 1D 패링/타격 시뮬레이터',
+            ja: 'ディレイとロールバックのネットコードの違いを視覚的に確認できる1Dパリング・打撃シミュレーター',
+            en: '1D parry/hit simulator for visualizing the difference between delay and rollback netcode',
+        },
+        achievements: [
+            {
+                ko: '딜레이 기반·롤백 넷코드를 직접 구현하고, 동일 시뮬레이터 위에서 실시간 전환·비교',
+                ja: 'ディレイ方式とロールバック方式のネットコードを自前で実装し、同一シミュレーター上でリアルタイム切り替え・比較',
+                en: 'Implemented both delay-based and rollback netcode from scratch; real-time switching and comparison on the same simulator',
+            },
+            {
+                ko: '레이턴시·지터·패킷 손실을 인위적으로 주입하는 가상 네트워크 레이어 구현 (8프레임 중복 전송으로 손실 복구)',
+                ja: 'レイテンシ・ジッター・パケットロスを任意に注入できる仮想ネットワークレイヤーを実装（直近8フレーム重複送信で損失を補完）',
+                en: 'Built a virtual network layer that injects configurable latency, jitter, and packet loss; redundant 8-frame history transmission for loss recovery',
+            },
+            {
+                ko: '결정론적 정수 연산 기반 게임 상태 설계 및 FNV-1a 체크섬을 활용한 롤백 모드 디싱크 자동 감지',
+                ja: '整数演算による決定論的ゲーム状態設計と、FNV-1aチェックサムを用いたロールバックモードのデシンク自動検出',
+                en: 'Deterministic integer-math game state with FNV-1a checksum-based automatic desync detection in rollback mode',
+            },
+            {
+                ko: 'transport 인터페이스 추상화로 루프백(단일 탭)·실제 WebSocket(두 탭) 모드를 넷코드 코드 수정 없이 전환',
+                ja: 'transportインターフェース抽象化により、ループバック（単一タブ）と実WebSocket（2タブ）モードをネットコードコード無修正で切り替え',
+                en: 'Transport interface abstraction enabling zero-code-change switching between loopback (single tab) and real WebSocket (two-tab) modes',
+            },
+        ],
+    },
+    {
         id: 'logbook',
         name: { ko: 'LogBook', ja: 'LogBook', en: 'LogBook' },
         period: '2025.07 ~ 2026.02',
