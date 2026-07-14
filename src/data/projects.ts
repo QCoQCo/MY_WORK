@@ -172,16 +172,39 @@ export const projects: Project[] = [
     {
         id: 'kanji-searcher',
         name: { ko: '일본어 한자 검색', ja: '日本語漢字検索', en: 'Japanese Kanji Search' },
-        period: '2025.05',
+        period: '2025.05 ~ 2026.07',
         tech: ['React', 'Vite', 'TypeScript', 'Jisho API', 'Kanji API', 'Netlify Functions'],
         github: 'https://github.com/QCoQCo/Kanji-Searcher',
         deployUrl: 'https://kanji-jisyo.netlify.app/',
         screenshot: ['/images/kanji.png', '/images/kanji2.png'],
+        team: { ko: '개인', ja: '個人', en: 'Solo' },
         overview: {
-            ko: 'JLPT 학습 효율화를 위한 획순 GIF 및 필터링 제공 검색 툴. Netlify Functions로 CORS 우회 구현',
-            ja: 'JLPT受験に向けた学習効率化を目的とした検索ツール。Netlify Functionsを用いたAPIプロキシでCORS回避',
-            en: 'JLPT study tool with stroke-order GIFs and filtering. CORS workaround via Netlify Functions',
+            ko: '한자 검색(획순 GIF)·랜덤 단어·플래시카드·단어장을 통합한 JLPT 학습 툴. Netlify Functions로 CORS 우회',
+            ja: '漢字検索(筆順GIF)・ランダム単語・フラッシュカード・単語帳を統合したJLPT学習ツール。Netlify FunctionsでCORS回避',
+            en: 'JLPT study tool integrating kanji search (stroke-order GIFs), random words, flashcards, and a word bank. CORS workaround via Netlify Functions',
         },
+        achievements: [
+            {
+                ko: 'Jisho API 순차 호출 단어 풀(레벨당 20단어, 로딩 1분 이상)을 오픈 Anki 덱(.apkg)의 SQLite를 파싱해 변환한 정적 JLPT JSON(N1~N5, 8,131단어)으로 교체 — 즉시 로딩 및 API 의존 제거',
+                ja: 'Jisho API逐次呼び出しの単語プール(レベルあたり20語、ロード1分以上)を、オープンAnkiデッキ(.apkg)のSQLiteを解析・変換した静的JLPT JSON(N1〜N5、8,131語)に置き換え — 即時ロードを実現しAPI依存を解消',
+                en: 'Replaced sequential Jisho API word pool (20 words/level, 1+ min loading) with static JLPT JSON (8,131 words, N1-N5) converted by parsing SQLite inside open Anki decks (.apkg) — instant loading, zero API dependency',
+            },
+            {
+                ko: 'JLPT 레벨 다중 선택 필터 및 Fisher-Yates 셔플 덱 구현 — 한 사이클 내 중복 없는 출제 보장, 1/3/5/10개 배치 표시 지원',
+                ja: 'JLPTレベル複数選択フィルターとFisher-Yatesシャッフルデッキを実装 — 1サイクル内の重複なし出題を保証し、1/3/5/10語のバッチ表示に対応',
+                en: 'Multi-select JLPT level filter with a Fisher-Yates shuffle deck guaranteeing no repeats within a cycle; batch display of 1/3/5/10 words',
+            },
+            {
+                ko: '단어·뜻 양방향 앞면 전환을 지원하는 플래시카드 모드 구현 (독해형·작문형 학습 대응)',
+                ja: '単語・意味の両方向に表面を切り替え可能なフラッシュカードモードを実装（読解型・作文型学習に対応）',
+                en: 'Flashcard mode with switchable word/meaning fronts, supporting both recognition and production practice',
+            },
+            {
+                ko: 'localStorage 기반 단어장 구현 — 단어 데이터 전체 복사 저장 설계, 전용 페이지 및 JSON 내보내기 지원',
+                ja: 'localStorageベースの単語帳を実装 — 単語データ全体を複製保存する設計で、専用ページとJSONエクスポートに対応',
+                en: 'localStorage-backed word bank storing full word data copies, with a dedicated page and JSON export',
+            },
+        ],
     },
     {
         id: 'todov2',
