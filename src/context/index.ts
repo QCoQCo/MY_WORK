@@ -1,6 +1,1 @@
-export {
-  LanguageProvider,
-  useLanguage,
-  type Locale,
-  type Translatable,
-} from './LanguageContext';
+export { LanguageProvider, useLanguage, type Locale, type Translatable } from './LanguageContext';

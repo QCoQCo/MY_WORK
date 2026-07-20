@@ -1,257 +1,261 @@
 /* ProjectDetail 페이지 */
 .page-project-detail {
-  padding: 3rem 2rem 5rem;
+    padding: 3rem 2rem 5rem;
 }
 
 .page-project-detail__inner {
-  max-width: 860px;
-  margin: 0 auto;
+    max-width: 860px;
+    margin: 0 auto;
 }
 
 /* 뒤로가기 버튼 */
 .project-detail__back {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.55);
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  transition: color 0.2s;
-  margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.55);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-bottom: 2rem;
 }
 
 .project-detail__back:hover {
-  color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .project-detail__back-arrow {
-  font-size: 1rem;
-  line-height: 1;
+    font-size: 1rem;
+    line-height: 1;
 }
 
 /* 헤더 */
 .project-detail__header {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .project-detail__name {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.75rem;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
 }
 
 .project-detail__meta {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
 .project-detail__period {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .project-detail__team {
-  font-size: 0.85rem;
-  padding: 0.2rem 0.6rem;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  color: rgba(255, 255, 255, 0.65);
+    font-size: 0.85rem;
+    padding: 0.2rem 0.6rem;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.65);
 }
 
 /* 갤러리 */
 .project-detail__gallery {
-  width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.4);
-  margin-bottom: 2.5rem;
-  aspect-ratio: 16 / 10;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.4);
+    margin-bottom: 2.5rem;
+    aspect-ratio: 16 / 10;
 }
 
 .project-detail__swiper {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .project-detail__swiper .swiper-slide {
-  height: 100%;
+    height: 100%;
 }
 
 .project-detail__swiper .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .project-detail__swiper .swiper-pagination-bullet {
-  background: rgba(255, 255, 255, 0.5);
-  opacity: 1;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 3px;
-  cursor: pointer;
-  transition: background 0.2s;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
 .project-detail__swiper .swiper-pagination-bullet-active {
-  background: #fff;
+    background: #fff;
 }
 
 .project-detail__swiper .swiper-pagination {
-  bottom: 10px;
+    bottom: 10px;
 }
 
 .project-detail__single-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* 본문 섹션 */
 .project-detail__content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .project-detail__section {
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
 }
 
 .project-detail__section-title {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 1rem;
 }
 
 .project-detail__overview {
-  font-size: 1rem;
-  line-height: 1.75;
-  color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 /* 기술 스택 */
 .project-detail__tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .project-detail__tech .tech-tag {
-  font-size: 0.8rem;
-  padding: 0.3rem 0.65rem;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 4px;
-  color: rgba(255, 255, 255, 0.75);
+    font-size: 0.8rem;
+    padding: 0.3rem 0.65rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 /* 성과 */
 .project-detail__achievements {
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-  padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    padding-left: 1rem;
 }
 
 .project-detail__achievements li {
-  list-style: disc;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
+    list-style: disc;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* 링크 섹션 */
 .project-detail__section--links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  background: transparent;
-  border: none;
-  padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    background: transparent;
+    border: none;
+    padding: 0;
 }
 
 .project-detail__section--links .btn-github,
 .project-detail__section--links .btn-deploy {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  padding: 0.5rem 1.25rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  border-radius: 6px;
-  border: 1px solid transparent;
-  transition: opacity 0.2s, background 0.2s, color 0.2s, transform 0.2s;
-  text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition:
+        opacity 0.2s,
+        background 0.2s,
+        color 0.2s,
+        transform 0.2s;
+    text-decoration: none;
 }
 
 .project-detail__section--links .btn-github {
-  background: #fff;
-  color: #111;
+    background: #fff;
+    color: #111;
 }
 
 .project-detail__section--links .btn-github:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
+    opacity: 0.9;
+    transform: translateY(-1px);
 }
 
 .project-detail__section--links .btn-deploy {
-  background: #0f8;
-  color: #000;
+    background: #0f8;
+    color: #000;
 }
 
 .project-detail__section--links .btn-deploy:hover {
-  background: #0da;
-  transform: translateY(-1px);
+    background: #0da;
+    transform: translateY(-1px);
 }
 
 /* 반응형 */
 @media (max-width: 768px) {
-  .page-project-detail {
-    padding: 2rem 1rem 4rem;
-  }
+    .page-project-detail {
+        padding: 2rem 1rem 4rem;
+    }
 
-  .project-detail__name {
-    font-size: 1.75rem;
-  }
+    .project-detail__name {
+        font-size: 1.75rem;
+    }
 
-  .project-detail__section {
-    padding: 1.25rem;
-  }
+    .project-detail__section {
+        padding: 1.25rem;
+    }
 }
 
 @media (max-width: 480px) {
-  .page-project-detail {
-    padding: 2rem 0.75rem 3rem;
-  }
+    .page-project-detail {
+        padding: 2rem 0.75rem 3rem;
+    }
 
-  .project-detail__name {
-    font-size: 1.5rem;
-  }
+    .project-detail__name {
+        font-size: 1.5rem;
+    }
 
-  .project-detail__overview {
-    font-size: 0.95rem;
-  }
+    .project-detail__overview {
+        font-size: 0.95rem;
+    }
 
-  .project-detail__achievements li {
-    font-size: 0.85rem;
-  }
+    .project-detail__achievements li {
+        font-size: 0.85rem;
+    }
 }

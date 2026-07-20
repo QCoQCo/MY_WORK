@@ -7,7 +7,7 @@ const Footer = () => {
     const timeoutRef = useRef<number | ReturnType<typeof setTimeout> | null>(null);
 
     const handleVersionClick = useCallback(() => {
-        setClickCount(prev => {
+        setClickCount((prev) => {
             const nextCount = prev + 1;
             if (nextCount >= 5) {
                 window.dispatchEvent(new CustomEvent('stellar-easter-egg'));
@@ -41,15 +41,28 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className='ft_bottom' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '20px' }}>
+                <div
+                    className='ft_bottom'
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        marginTop: '20px',
+                    }}
+                >
                     <p className='copyright'>
                         © {new Date().getFullYear()}. CO_s_MOS. All Rights Reserved.
                     </p>
-                    <span 
-                        className="version-trigger" 
+                    <span
+                        className='version-trigger'
                         onClick={handleVersionClick}
-                        style={{ cursor: 'pointer', opacity: 0.5, fontSize: '0.8rem', userSelect: 'none' }}
-                        title="Version"
+                        style={{
+                            cursor: 'pointer',
+                            opacity: 0.5,
+                            fontSize: '0.8rem',
+                            userSelect: 'none',
+                        }}
+                        title='Version'
                     >
                         v2.4.1-stellar
                     </span>

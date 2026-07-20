@@ -65,7 +65,7 @@ export class InputManager {
             // Center of screen (where the ship is)
             const cx = rect.left + rect.width / 2;
             const cy = rect.top + rect.height / 2;
-            
+
             // Vector from center to touch point
             const dx = touch.clientX - cx;
             const dy = -(touch.clientY - cy); // Invert Y because screen Y goes down

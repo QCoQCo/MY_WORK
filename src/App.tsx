@@ -12,7 +12,10 @@ const Layout = () => {
     const showAnimatedBg = pathname !== '/';
 
     return (
-        <div id='wrapper' className={showAnimatedBg ? 'wrapper--with-animated-bg' : 'wrapper--home'}>
+        <div
+            id='wrapper'
+            className={showAnimatedBg ? 'wrapper--with-animated-bg' : 'wrapper--home'}
+        >
             {showAnimatedBg && <AnimatedBackground />}
             <Header />
             <LocalNav />
@@ -39,7 +42,27 @@ function App() {
     return (
         <div id='app'>
             {showGame && (
-                <Suspense fallback={<div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 9999, backgroundColor: 'black', color: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Loading...</div>}>
+                <Suspense
+                    fallback={
+                        <div
+                            style={{
+                                position: 'fixed',
+                                top: 0,
+                                left: 0,
+                                width: '100%',
+                                height: '100%',
+                                zIndex: 9999,
+                                backgroundColor: 'black',
+                                color: 'white',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            Loading...
+                        </div>
+                    }
+                >
                     <GameOverlay onClose={handleCloseGame} />
                 </Suspense>
             )}
