@@ -4,37 +4,41 @@ import { SectionTitle } from '../components';
 import './Contact.css';
 
 export default function Contact() {
-  const { t } = useLanguage();
+    const { t } = useLanguage();
 
-  const sectionTitle = {
-    en: 'CONTACT',
-    localized: { ko: '함께 일하고 싶으시다면', ja: '共に働きたい方は', en: 'If you\'d like to work together' },
-  };
+    const sectionTitle = {
+        en: 'CONTACT',
+        localized: {
+            ko: '함께 일하고 싶으시다면',
+            ja: '共に働きたい方は',
+            en: "If you'd like to work together",
+        },
+    };
 
-  const cta = {
-    ko: '연락 주세요',
-    ja: 'お問い合わせください',
-    en: 'Please get in touch',
-  };
+    const cta = {
+        ko: '연락 주세요',
+        ja: 'お問い合わせください',
+        en: 'Please get in touch',
+    };
 
-  return (
-    <div className="page page-contact">
-      <div className="page-contact__inner">
-        <SectionTitle en={sectionTitle.en} localized={t(sectionTitle.localized)} />
-        <p className="page-contact__cta">{t(cta)}</p>
-        <ul className="page-contact__links">
-          <li>
-            <span className="label">E.</span>
-            <a href={`mailto:${profile.email}`}>{profile.email}</a>
-          </li>
-          <li>
-            <span className="label">G.</span>
-            <a href={profile.github} target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
+    return (
+        <div className='page page-contact'>
+            <div className='page-contact__inner'>
+                <SectionTitle en={sectionTitle.en} localized={t(sectionTitle.localized)} />
+                <p className='page-contact__cta'>{t(cta)}</p>
+                <ul className='page-contact__links'>
+                    <li>
+                        <span className='label'>E.</span>
+                        <a href={`mailto:${profile.email}`}>{profile.email}</a>
+                    </li>
+                    <li>
+                        <span className='label'>G.</span>
+                        <a href={profile.github} target='_blank' rel='noopener noreferrer'>
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    );
 }
