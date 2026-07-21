@@ -22,7 +22,7 @@ export const projects: Project[] = [
         period: '2025.11 ~ 2026.01',
         tech: ['Node.js', 'WebSocket', 'HTML', 'CSS', 'JavaScript'],
         github: 'https://github.com/QCoQCo/Net-delay-parry-hit-simulator',
-        screenshot: ['/images/netcode1.png', '/images/netcode2.png'],
+        screenshot: ['/images/netcode1.webp', '/images/netcode2.webp'],
         team: { ko: '개인', ja: '個人', en: 'Solo' },
         overview: {
             ko: '딜레이와 롤백 넷코드의 동작 차이를 직접 확인하는 1D 패링/타격 시뮬레이터',
@@ -69,10 +69,10 @@ export const projects: Project[] = [
         github: 'https://github.com/QCoQCo/LogBook',
         deployUrl: 'https://logbooks.cc/',
         screenshot: [
-            '/images/log-book1.png',
-            '/images/log-book2.png',
-            '/images/log-book3.png',
-            '/images/log-book4.png',
+            '/images/log-book1.webp',
+            '/images/log-book2.webp',
+            '/images/log-book3.webp',
+            '/images/log-book4.webp',
         ],
         team: { ko: '3인 팀 (팀장)', ja: '全3名 (チームリーダー)', en: 'Team of 3 (Leader)' },
         overview: {
@@ -110,7 +110,7 @@ export const projects: Project[] = [
         tech: ['Java', 'Spring Boot', 'MyBatis', 'OAuth2', 'Kakao Map API', 'Thymeleaf', 'MySQL'],
         github: 'https://github.com/QCoQCo/ORORAproject',
         deployUrl: 'https://www.arata-busan.com/',
-        screenshot: ['/images/arata1.png', '/images/arata2.png', '/images/arata3.png'],
+        screenshot: ['/images/arata1.webp', '/images/arata2.webp', '/images/arata3.webp'],
         team: { ko: '5인 팀 (팀장)', ja: '全5名 (チームリーダー)', en: 'Team of 5 (Leader)' },
         overview: {
             ko: '방한 일본인 및 영어권 관광객 타겟 부산 명소 소개 종합 웹 플랫폼(데모버전 배포중)',
@@ -136,7 +136,7 @@ export const projects: Project[] = [
         period: '2025.12 ~ 2026.02',
         tech: ['Rust', 'Tauri', 'React', 'TypeScript', 'Mafs', 'MathLive'],
         github: 'https://github.com/QCoQCo/R_R_Gebra',
-        screenshot: ['/images/r-r-gebra1.png', '/images/r-r-gebra2.png'],
+        screenshot: ['/images/r-r-gebra1.webp', '/images/r-r-gebra2.webp'],
         overview: {
             ko: '수학 학습용 복잡한 함수 그래프를 고속 렌더링하는 GeoGebra 스타일 데스크톱 앱',
             ja: '複雑な関数のグラフを高速かつ滑らかに可視化するGeoGebra風デスクトップアプリケーション',
@@ -149,7 +149,7 @@ export const projects: Project[] = [
         period: '2025.07',
         tech: ['React', 'TypeScript', 'Vite', 'Node.js', 'WebSocket'],
         github: 'https://github.com/QCoQCo/WS-Chat',
-        screenshot: '/images/ws-chat.png',
+        screenshot: '/images/ws-chat.webp',
         overview: {
             ko: 'WebSocket 기반 클라이언트 간 실시간 메시지 통신 채팅 데모 앱',
             ja: 'クライアント間のリアルタイムメッセージ通信が可能なチャットデモアプリ',
@@ -162,7 +162,7 @@ export const projects: Project[] = [
         period: '2025.07',
         tech: ['Java 21', 'Swing', 'Maven'],
         github: 'https://github.com/QCoQCo/Rogue01',
-        screenshot: ['/images/rogue1.png', '/images/rogue2.png', '/images/rogue3.png'],
+        screenshot: ['/images/rogue1.webp', '/images/rogue2.webp', '/images/rogue3.webp'],
         overview: {
             ko: '던전 탐색과 JRPG 전투를 결합한 클래식 로그라이크 데스크톱 게임',
             ja: 'ダンジョン探索とJRPGスタイルのターン制戦闘を組み合わせたローグライクデスクトップゲーム',
@@ -176,7 +176,7 @@ export const projects: Project[] = [
         tech: ['React', 'Vite', 'TypeScript', 'Jisho API', 'Kanji API', 'Netlify Functions'],
         github: 'https://github.com/QCoQCo/Kanji-Searcher',
         deployUrl: 'https://kanji-jisyo.netlify.app/',
-        screenshot: ['/images/kanji.png', '/images/kanji2.png'],
+        screenshot: ['/images/kanji.webp', '/images/kanji2.webp'],
         team: { ko: '개인', ja: '個人', en: 'Solo' },
         overview: {
             ko: '한자 검색(획순 GIF)·랜덤 단어·플래시카드·단어장을 통합한 JLPT 학습 툴. Netlify Functions로 CORS 우회',
@@ -212,7 +212,7 @@ export const projects: Project[] = [
         period: '2025.03',
         tech: ['React', 'Node.js', 'Express', 'MySQL', 'AWS RDS', 'Google OAuth 2.0'],
         github: 'https://github.com/QCoQCo/TODOV2',
-        screenshot: '/images/full-stack-todo.png',
+        screenshot: '/images/full-stack-todo.webp',
         overview: {
             ko: '소셜 로그인, 활동 통계 기능을 갖춘 풀스택 웹 애플리케이션. AWS RDS 인프라 구축',
             ja: 'Google OAuth連携や統計機能を備えたフルスタックWebアプリ。AWS RDSを用いたDBインフラ構築',
@@ -226,7 +226,7 @@ export const projects: Project[] = [
         tech: ['HTML', 'CSS', 'JavaScript', 'Figma', 'Netlify'],
         github: 'https://github.com/QCoQCo/figma_ferrari',
         deployUrl: 'https://figmaferrari.netlify.app/',
-        screenshot: ['/images/ferrari1.png', '/images/ferrari2.png'],
+        screenshot: ['/images/ferrari1.webp', '/images/ferrari2.webp'],
         overview: {
             ko: '페라리 브랜드 사이트 리디자인',
             ja: 'フェラーリ ブランドサイト・リデザイン',
@@ -239,7 +239,7 @@ export const projects: Project[] = [
         period: '2024.08',
         tech: ['Rust', 'Tauri', 'JavaScript', 'Chart.js', 'AES-GCM'],
         github: 'https://github.com/QCoQCo/Rust-Tauri-Todo-Remake',
-        screenshot: '/images/tauri-todo.png',
+        screenshot: '/images/tauri-todo.webp',
         overview: {
             ko: 'Rust와 Tauri를 사용한 데스크톱 앱, AES-256-GCM 암호화 시도',
             ja: 'RustとTauriを使用したデスクトップアプリ、AES-256-GCM暗号化試行',
@@ -252,7 +252,7 @@ export const projects: Project[] = [
         period: '2024.06 ~ 2025.12',
         tech: ['Rust', 'Iced', 'C++', 'GCC', 'CMake'],
         github: 'https://github.com/QCoQCo/RUST-GUI-Calculator',
-        screenshot: '/images/rust-gui-calc.png',
+        screenshot: '/images/rust-gui-calc.webp',
         overview: {
             ko: '재귀 하향 파서를 직접 구현한 CLI 버전을 Iced 프레임워크로 GUI 확장',
             ja: '再帰下降パーサーを実装したCLI版から、Icedフレームワークを用いたGUIへと拡張',
@@ -265,7 +265,7 @@ export const projects: Project[] = [
         period: '2024.06',
         tech: ['Rust'],
         github: 'https://github.com/QCoQCo/Rust-cli-calc',
-        screenshot: '/images/default.jpg',
+        screenshot: '/images/default.webp',
         overview: {
             ko: 'Rust로 구현한 CLI 계산기',
             ja: 'Rustで実装したCLI計算機',
@@ -278,7 +278,7 @@ export const projects: Project[] = [
         period: '2024.06',
         tech: ['C++', 'Cmake'],
         github: 'https://github.com/QCoQCo/CPP_CLI_CALC_REMAKE',
-        screenshot: '/images/default.jpg',
+        screenshot: '/images/default.webp',
         overview: {
             ko: 'C++로 구현한 CLI 계산기',
             ja: 'C++で実装したCLI計算機',
@@ -291,7 +291,7 @@ export const projects: Project[] = [
         period: '2024.06',
         tech: ['Python', 'tkinter', 'PyInstaller'],
         github: 'https://github.com/QCoQCo/stwch',
-        screenshot: ['/images/stwatch-todo1.png', '/images/stwatch-todo2.png'],
+        screenshot: ['/images/stwatch-todo1.webp', '/images/stwatch-todo2.webp'],
         overview: {
             ko: 'macOS용 스톱워치 및 To-Do 리스트',
             ja: 'macOS用ストップウォッチおよびTo-Doリスト',

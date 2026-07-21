@@ -6,7 +6,7 @@ import { useLanguage } from '../context';
 import type { Project } from '../data';
 import './ProjectCard.css';
 
-const DEFAULT_SCREENSHOT = '/images/default.jpg';
+const DEFAULT_SCREENSHOT = '/images/default.webp';
 
 interface ProjectCardProps {
     project: Project;

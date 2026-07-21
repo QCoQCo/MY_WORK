@@ -6,7 +6,7 @@ import { useLanguage } from '../context';
 import { projects } from '../data';
 import './ProjectDetail.css';
 
-const DEFAULT_SCREENSHOT = '/images/default.jpg';
+const DEFAULT_SCREENSHOT = '/images/default.webp';
 
 export default function ProjectDetail() {
     const { id } = useParams<{ id: string }>();
