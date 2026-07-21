@@ -16,10 +16,11 @@ const AboutSection = () => {
     type TimelineItem = { year: string; ko: string; ja: string; en?: string };
     const merged: TimelineItem[] = [
         ...education.map((e) => ({ year: e.year, ko: e.ko, ja: e.ja, en: e.en })),
-        ...experience.map((e: { year: string; ko: string; ja: string }) => ({
+        ...experience.map((e: { year: string; ko: string; ja: string; en?: string }) => ({
             year: e.year,
             ko: e.ko,
             ja: e.ja,
+            en: e.en,
         })),
     ].sort((a, b) => a.year.localeCompare(b.year));
 
