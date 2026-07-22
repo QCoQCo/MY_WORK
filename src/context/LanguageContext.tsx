@@ -1,4 +1,11 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
+import {
+    createContext,
+    useContext,
+    useState,
+    useCallback,
+    useEffect,
+    type ReactNode,
+} from 'react';
 
 export type Locale = 'ko' | 'ja' | 'en';
 
@@ -16,12 +23,33 @@ interface LanguageContextValue {
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
+const STORAGE_KEY = 'locale';
+
+function getInitialLocale(): Locale {
+    try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved === 'ko' || saved === 'ja' || saved === 'en') return saved;
+    } catch {
+        // localStorage 접근 불가 시 기본값 사용
+    }
+    return 'ja';
+}
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-    const [locale, setLocaleState] = useState<Locale>('ja');
+    const [locale, setLocaleState] = useState<Locale>(getInitialLocale);
 
     const setLocale = useCallback((l: Locale) => {
         setLocaleState(l);
+        try {
+            localStorage.setItem(STORAGE_KEY, l);
+        } catch {
+            // 저장 실패는 무시
+        }
     }, []);
+
+    useEffect(() => {
+        document.documentElement.lang = locale;
+    }, [locale]);
 
     const t = useCallback(
         (obj: Translatable): string => {
