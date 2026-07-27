@@ -1,6 +1,6 @@
 import { useLanguage } from '../context';
 import { profile } from '../data';
-import { SectionTitle } from '../components';
+import { PageHeader } from '../components';
 import './Contact.css';
 
 export default function Contact() {
@@ -23,8 +23,13 @@ export default function Contact() {
 
     return (
         <div className='page page-contact'>
+            <PageHeader
+                en={sectionTitle.en}
+                localized={t(sectionTitle.localized)}
+                video='/videos/header-contact.mp4'
+                maxWidth={560}
+            />
             <div className='page-contact__inner'>
-                <SectionTitle en={sectionTitle.en} localized={t(sectionTitle.localized)} />
                 <p className='page-contact__cta'>{t(cta)}</p>
                 <ul className='page-contact__links'>
                     <li>

@@ -1,0 +1,67 @@
+/* 서브페이지 상단 영상 배너 */
+.page-header {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    height: 260px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+
+.page-header__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.55;
+}
+
+/* 텍스트 가독성 + 페이지 배경으로 자연스럽게 이어지는 그라데이션 */
+.page-header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0.2) 45%,
+        rgba(13, 13, 25, 0.92) 100%
+    );
+}
+
+.page-header__inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem 1.5rem;
+}
+
+.page-header .section-title {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        height: 200px;
+        margin-bottom: 2rem;
+    }
+
+    .page-header__inner {
+        padding: 0 1rem 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        height: 160px;
+        margin-bottom: 1.5rem;
+    }
+
+    .page-header__inner {
+        padding: 0 0.75rem 1rem;
+    }
+}

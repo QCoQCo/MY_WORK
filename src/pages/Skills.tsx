@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useLanguage } from '../context';
 import { skills } from '../data';
-import { SectionTitle } from '../components';
+import { PageHeader } from '../components';
 import './Skills.css';
 
 export default function Skills() {
@@ -17,8 +17,13 @@ export default function Skills() {
 
     return (
         <div className='page page-skills'>
+            <PageHeader
+                en={sectionTitle.en}
+                localized={t(sectionTitle.localized)}
+                video='/videos/header-skills.mp4'
+                maxWidth={1000}
+            />
             <div className='page-skills__inner'>
-                <SectionTitle en={sectionTitle.en} localized={t(sectionTitle.localized)} />
                 <div className='skills-layout'>
                     <div className='skills-tabs'>
                         {skills.map((cat, i) => (

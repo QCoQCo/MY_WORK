@@ -4,6 +4,7 @@ import { useState, useRef, useCallback } from 'react';
 
 const Footer = () => {
     const [, setClickCount] = useState(0);
+    // const [isFooterEnd, setIsFooterEnd] = useState(false);
     const timeoutRef = useRef<number | ReturnType<typeof setTimeout> | null>(null);
 
     const handleVersionClick = useCallback(() => {

@@ -1,6 +1,6 @@
 /* Contact 페이지 */
 .page-contact {
-    padding: 3rem 2rem 5rem;
+    padding: 0 2rem 5rem;
 }
 
 .page-contact__inner {
@@ -46,7 +46,7 @@
 
 @media (max-width: 768px) {
     .page-contact {
-        padding: 2rem 1rem 4rem;
+        padding: 0 1rem 4rem;
     }
 
     .page-contact__links {
@@ -58,7 +58,7 @@
 
 @media (max-width: 480px) {
     .page-contact {
-        padding: 2rem 0.75rem 3rem;
+        padding: 0 0.75rem 3rem;
     }
 
     .page-contact__cta {

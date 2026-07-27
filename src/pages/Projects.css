@@ -1,6 +1,6 @@
 /* Projects 페이지 */
 .page-projects {
-  padding: 3rem 2rem 5rem;
+  padding: 0 2rem 5rem;
 }
 
 .page-projects__inner {
@@ -18,7 +18,7 @@
 
 @media (max-width: 768px) {
   .page-projects {
-    padding: 2rem 1rem 4rem;
+    padding: 0 1rem 4rem;
   }
 
   .project-cards--full {
@@ -28,7 +28,7 @@
 
 @media (max-width: 480px) {
   .page-projects {
-    padding: 2rem 0.75rem 3rem;
+    padding: 0 0.75rem 3rem;
   }
 
   .project-cards--full {
