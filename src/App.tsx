@@ -20,7 +20,9 @@ const Layout = () => {
             <Header />
             <LocalNav />
             <main id='main-content'>
-                <Outlet />
+                <div key={pathname} className='route-transition'>
+                    <Outlet />
+                </div>
             </main>
             <Footer />
             <TopBtn />

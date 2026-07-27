@@ -1,6 +1,6 @@
 /* Skills 페이지 */
 .page-skills {
-    padding: 3rem 2rem 5rem;
+    padding: 0 2rem 5rem;
 }
 
 .page-skills__inner {
@@ -124,13 +124,13 @@
 
 @media (max-width: 768px) {
     .page-skills {
-        padding: 2rem 1rem 4rem;
+        padding: 0 1rem 4rem;
     }
 }
 
 @media (max-width: 480px) {
     .page-skills {
-        padding: 2rem 0.75rem 3rem;
+        padding: 0 0.75rem 3rem;
     }
 
     .skills-tab {

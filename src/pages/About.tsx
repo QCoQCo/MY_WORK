@@ -1,6 +1,6 @@
 import { useLanguage } from '../context';
 import { profile, education, certifications } from '../data';
-import { SectionTitle } from '../components';
+import { SectionTitle, PageHeader } from '../components';
 import './About.css';
 
 type TimelineItem = { year: string; ko: string; ja: string };
@@ -34,8 +34,13 @@ export default function About() {
 
     return (
         <div className='page page-about'>
+            <PageHeader
+                en={sectionTitle.en}
+                localized={t(sectionTitle.localized)}
+                video='/videos/header-about.mp4'
+                maxWidth={700}
+            />
             <div className='page-about__inner'>
-                <SectionTitle en={sectionTitle.en} localized={t(sectionTitle.localized)} />
                 <div className='profile-card'>
                     <dl className='profile-dl'>
                         <div className='profile-dl__row'>

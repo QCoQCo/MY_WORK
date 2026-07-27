@@ -1,6 +1,6 @@
 import { useLanguage } from '../context';
 import { projects } from '../data';
-import { SectionTitle, ProjectCard } from '../components';
+import { PageHeader, ProjectCard } from '../components';
 import './Projects.css';
 
 export default function Projects() {
@@ -17,8 +17,13 @@ export default function Projects() {
 
     return (
         <div className='page page-projects'>
+            <PageHeader
+                en={sectionTitle.en}
+                localized={t(sectionTitle.localized)}
+                video='/videos/header-projects.mp4'
+                maxWidth={1200}
+            />
             <div className='page-projects__inner'>
-                <SectionTitle en={sectionTitle.en} localized={t(sectionTitle.localized)} />
                 <ul className='project-cards project-cards--full'>
                     {projects.map((project) => (
                         <ProjectCard key={project.id} project={project} />

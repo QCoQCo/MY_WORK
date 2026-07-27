@@ -79,6 +79,8 @@ button {
     width: 100%;
     min-height: 100vh;
     background-color: #000;
+    /* PageHeader 100vw 풀블리드 시 가로 스크롤 방지 */
+    overflow-x: clip;
 }
 
 /* HeroSection 제외 페이지: 별/구름 배경 + 그라데이션 */
@@ -100,6 +102,28 @@ button {
 #main-content {
     padding-top: 60px; /* header 높이 */
     min-height: calc(100vh - 60px);
+}
+
+/* 라우트 전환 페이드 */
+.route-transition {
+    animation: route-fade-in 0.4s ease both;
+}
+
+@keyframes route-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .route-transition {
+        animation: none;
+    }
 }
 
 .page {
