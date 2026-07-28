@@ -100,7 +100,8 @@ button {
 }
 
 #main-content {
-    padding-top: 60px; /* header 높이 */
+    /* padding-top: 60px; */
+    /* header 높이 */
     min-height: calc(100vh - 60px);
 }
 
