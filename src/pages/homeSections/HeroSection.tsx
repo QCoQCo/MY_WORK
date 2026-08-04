@@ -43,10 +43,9 @@ const HeroSection = () => {
     const fullName = t(profile.name);
     useEffect(() => {
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            setTypedName(fullName);
-            return;
+            const id = setTimeout(() => setTypedName(fullName));
+            return () => clearTimeout(id);
         }
-        setTypedName('');
         let i = 0;
         const id = setInterval(() => {
             i += 1;

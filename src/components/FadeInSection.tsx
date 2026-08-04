@@ -5,9 +5,6 @@ interface FadeInSectionProps {
     className?: string;
 }
 
-/**
- * Intersection Observer로 뷰포트 진입 시 페이드 인
- */
 const FadeInSection = ({ children, className = '' }: FadeInSectionProps) => {
     const ref = useRef<HTMLDivElement>(null);
     const [visible, setVisible] = useState(false);
