@@ -1,6 +1,7 @@
 /* ProjectDetail 페이지 */
 .page-project-detail {
-    padding: 3rem 2rem 5rem;
+    /* 고정 헤더(60px)에 가리지 않도록 상단 여백 확보 */
+    padding: 4.5rem 2rem 5rem;
 }
 
 .page-project-detail__inner {
