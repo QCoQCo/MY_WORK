@@ -42,6 +42,12 @@ export default function Contact() {
                             GitHub
                         </a>
                     </li>
+                    <li>
+                        <span className='label'>L.</span>
+                        <a href={profile.linkedin} target='_blank' rel='noopener noreferrer'>
+                            LinkedIn
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

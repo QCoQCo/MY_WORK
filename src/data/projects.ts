@@ -1,6 +1,3 @@
-/**
- * 프로젝트 경력 (my_work.md)
- */
 export interface Project {
     id: string;
     name: { ko: string; ja: string; en: string };
@@ -258,32 +255,18 @@ export const projects: Project[] = [
             ja: '再帰下降パーサーを実装したCLI版から、Icedフレームワークを用いたGUIへと拡張',
             en: 'GUI extension of CLI calculator with recursive descent parser using Iced framework',
         },
-    },
-    {
-        id: 'calculator-Rust-cli',
-        name: { ko: '계산기 (CLI)', ja: '計算機 (CLI)', en: 'Calculator (CLI)' },
-        period: '2024.06',
-        tech: ['Rust'],
-        github: 'https://github.com/QCoQCo/Rust-cli-calc',
-        screenshot: '/images/default.webp',
-        overview: {
-            ko: 'Rust로 구현한 CLI 계산기',
-            ja: 'Rustで実装したCLI計算機',
-            en: 'CLI calculator implemented in Rust',
-        },
-    },
-    {
-        id: 'calculator-C++-cli',
-        name: { ko: 'C++ 계산기 (CLI)', ja: 'C++ 計算機 (CLI)', en: 'C++ Calculator (CLI)' },
-        period: '2024.06',
-        tech: ['C++', 'Cmake'],
-        github: 'https://github.com/QCoQCo/CPP_CLI_CALC_REMAKE',
-        screenshot: '/images/default.webp',
-        overview: {
-            ko: 'C++로 구현한 CLI 계산기',
-            ja: 'C++で実装したCLI計算機',
-            en: 'CLI calculator implemented in C++',
-        },
+        achievements: [
+            {
+                ko: '토크나이저·재귀 하향 파서를 라이브러리 없이 직접 구현하여 연산자 우선순위·괄호 처리',
+                ja: 'トークナイザー・再帰下降パーサーをライブラリなしで自作し、演算子の優先順位・括弧処理を実装',
+                en: 'Hand-built tokenizer and recursive descent parser (no libraries) handling operator precedence and parentheses',
+            },
+            {
+                ko: '동일 파서 설계를 Rust·C++ CLI 버전으로 각각 선행 구현 후 Rust GUI로 발전 — 언어 간 설계 이식 경험',
+                ja: '同一パーサー設計をRust・C++のCLI版でそれぞれ先行実装した後、Rust GUIへ発展 — 言語間の設計移植を経験',
+                en: 'First implemented the same parser design as Rust and C++ CLI versions, then evolved it into a Rust GUI — cross-language design porting',
+            },
+        ],
     },
     {
         id: 'stwch',

@@ -2,9 +2,9 @@
  * 직무 요약 - 히어로 등 간단 소개용 (my_work.md 직무요약)
  */
 export const jobSummary = {
-    ko: '풀스텍 개발자를 꿈꾸고 있습니다.',
-    ja: 'フルスタック開発者を目指しています。',
-    en: 'Aspiring to become a full-stack developer.',
+    ko: '도쿄를 거점으로 활동하는 풀스택 개발자입니다.',
+    ja: '東京を拠点に活動するフルスタック開発者です。',
+    en: 'Full-stack developer based in Tokyo.',
 } as const;
 
 /**
@@ -23,27 +23,3 @@ export const introStrength = {
     en: 'I have honed full-stack development from React to AWS infrastructure and learned the importance of UI/UX optimization and scalable design through projects. With continuous language study, I am ready to contribute in global environments.',
 } as const;
 
-/** 기술 상세 (Skills 등 참고용) */
-export const strengths = {
-    ko: 'React Hooks·상태 관리·렌더링 최적화, Spring MVC·DI/AOP·REST API, Tauri 데스크톱 앱, MySQL 스키마 설계·쿼리 최적화, Git Flow·Docker·AWS(EC2, S3, RDS) 환경 구축.',
-    ja: 'React Hooks・状態管理・レンダリング最適化、Spring MVC・DI/AOP・REST API、Tauriデスクトップアプリ、MySQLスキーマ設計・クエリ最適化、Git Flow・Docker・AWS(EC2, S3, RDS)環境構築。',
-    en: 'React Hooks, state management, rendering optimization; Spring MVC, DI/AOP, REST API; Tauri desktop apps; MySQL schema design and query optimization; Git Flow, Docker, AWS (EC2, S3, RDS) environment setup.',
-} as const;
-
-export const selfPr = {
-    fullstack: {
-        ko: 'React 프론트엔드부터 AWS 인프라까지 풀스택 개발 가능.',
-        ja: 'ReactフロントエンドからAWSインフラまでフルスタック開発可能。',
-        en: 'Full-stack development from React frontend to AWS infrastructure.',
-    },
-    stack: {
-        ko: '주요 스택: React, TypeScript, Rust, Spring Boot, MySQL, Firebase, AWS.',
-        ja: '主要スタック: React, TypeScript, Rust, Spring Boot, MySQL, Firebase, AWS。',
-        en: 'Tech stack: React, TypeScript, Rust, Spring Boot, MySQL, Firebase, AWS.',
-    },
-    language: {
-        ko: 'TOEIC 880점, JLPT N2.',
-        ja: 'TOEIC 880点、JLPT N2。',
-        en: 'TOEIC 880, JLPT N2.',
-    },
-} as const;

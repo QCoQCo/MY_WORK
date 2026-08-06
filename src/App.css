@@ -94,7 +94,6 @@ button {
     );
 }
 
-/* 홈 페이지: wrapper 투명 — fixed 비디오가 비치도록 */
 #wrapper.wrapper--home {
     background-color: transparent;
 }

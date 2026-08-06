@@ -22,9 +22,9 @@ export const education: { year: string; ko: string; ja: string; en: string }[] =
     },
     {
         year: '2020.02',
-        ko: '부산과학기술대학교 컴퓨터정보과 졸업 (4.5/4.4)',
-        ja: '釜山科学技術大学 コンピュータ情報科 卒業 (4.5/4.4)',
-        en: 'Graduated from Computer Information (GPA 4.5/4.4), Busan University of Science and Technology',
+        ko: '부산과학기술대학교 컴퓨터정보과 졸업 (4.4/4.5)',
+        ja: '釜山科学技術大学 コンピュータ情報科 卒業 (4.4/4.5)',
+        en: 'Graduated from Computer Information (GPA 4.4/4.5), Busan University of Science and Technology',
     },
     {
         year: '2021.03',
@@ -45,12 +45,14 @@ export const education: { year: string; ko: string; ja: string; en: string }[] =
         ja: 'K-Move AWSフルスタック開発者研修課程 開始',
         en: 'Started K-Move AWS Full-stack Developer Training',
     },
+    /* 
     {
         year: '2025.08',
         ko: '서강대학교 기계공학과 중퇴',
         ja: '西江大学校 機械工学科 中途退学',
         en: 'Withdrew from Mechanical Engineering, Sogang University',
     },
+    */
     {
         year: '2026.02',
         ko: 'K-Move AWS 풀스택 개발자 연수 과정 수료',

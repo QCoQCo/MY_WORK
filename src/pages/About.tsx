@@ -47,14 +47,6 @@ export default function About() {
                             <dt>{t({ ko: '이름', ja: '名前' })}</dt>
                             <dd>{t(profile.name)}</dd>
                         </div>
-                        <div className='profile-dl__row'>
-                            <dt>{t({ ko: '생년월일', ja: '生年月日', en: 'Date of Birth' })}</dt>
-                            <dd>{t(profile.birthdate)}</dd>
-                        </div>
-                        <div className='profile-dl__row'>
-                            <dt>{t({ ko: '성별', ja: '性別', en: 'Gender' })}</dt>
-                            <dd>{t(profile.gender)}</dd>
-                        </div>
                     </dl>
                     <ul className='profile-links'>
                         <li>
@@ -63,6 +55,11 @@ export default function About() {
                         <li>
                             <a href={profile.github} target='_blank' rel='noopener noreferrer'>
                                 GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href={profile.linkedin} target='_blank' rel='noopener noreferrer'>
+                                LinkedIn
                             </a>
                         </li>
                     </ul>
